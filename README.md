@@ -1,4 +1,4 @@
-# 小一机器人
+# 小一机器人-ChatGPT的API
 
 #### 介绍
 小一机器人，提供ChatGPT的API调用
