@@ -98,4 +98,7 @@ curl -XPOST xxxxx/v1/chat/completions -d '{
 }
 ```
 
-
+- **联系我们**  
+1、微信公众号：小一机器人  
+2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样）  
+![输入图片说明](img/image.png)
