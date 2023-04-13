@@ -100,6 +100,6 @@ curl -XPOST xxxxx/v1/chat/completions -d '{
 
 - **联系我们**  
 1、微信公众号：小一机器人  
-2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样）  
+2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送1万token）  
 ![image](https://user-images.githubusercontent.com/38256442/231513453-0b1251d9-b00e-4b9e-9c3d-0d9b9e65e721.png)
 
