@@ -97,10 +97,78 @@ curl -XPOST xxxxx/v1/chat/completions -d '{
   }
 }
 ```
+#### 2、图片-创建图片
+
+Given a prompt and/or an input image, the model will generate a new image.
+
+- **请求URL**
+> [api/v1/images/generations](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| application/json| 
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |
+| api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得
+| prompt| string| 是| A text description of the desired image(s). The maximum length is 1000 characters.  |
+| n| int| 否| The number of images to generate. Must be between 1 and 10. Defaults to 1|
+| size| string| 否| The size of the generated images. Must be one of 256x256, 512x512, or 1024x1024. Defaults to 1024x1024|
+| response_format| string| 否| The format in which the generated images are returned. Must be one of url or b64_json. Defaults to url|
+| user| string| 否| 表示最终用户的唯一标识符，可以监视和检测滥用行为，防止接口恶意调用。|
+
+- **返回参数**
+>
+| 返回参数      |     参数类型 |   参数说明   |
+| :-------- | :--------| :------ |
+| code|   int|  执行结果code|
+| msg|   String|  执行结果消息|
+| created| int| 时间戳。|
+| data| List(img)| 对话返回结果。|
+
+- **img说明**
+>
+| 名称      |     类型 |   描述   |
+| :-------- | :--------| :------ |
+| url|   string|  当前图片的地址url|
+
+- **请求示例**
+>    
+```
+curl -XPOST xxxxx/v1/images/generations -d '{
+  "api_secret_key":"xxxxxxxx",
+  "prompt": "A cute baby sea otter",
+}'  | iconv -f utf-8 -t utf-8
+```
+
+- **返回示例**
+>    
+```
+{
+  "code": 0,
+  "msg": "",
+  "created": 1680167072,
+  "data": [
+    {
+      "url": "https://..."
+    },
+    {
+      "url": "https://..."
+    }
+  ]
+}
+```
 
 - **联系我们**  
 1、微信公众号：小一机器人  
-2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送1000token）  
+2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送免费token）  
 ![image](https://user-images.githubusercontent.com/38256442/231513453-0b1251d9-b00e-4b9e-9c3d-0d9b9e65e721.png)  
 3、微信讨论群（扫码添加客服入群）：  
 ![xiaoyi客服1号-小](https://user-images.githubusercontent.com/38256442/233920603-7e0b16c2-c475-464a-89ef-4f76bcdaee59.png)
