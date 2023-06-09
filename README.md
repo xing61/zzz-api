@@ -69,7 +69,7 @@
 - **请求示例**
 >    
 ```
-curl -XPOST xxxxx/v1/chat/completions -d '{
+curl -H "Content-Type: application/json" -XPOST xxxxx/v1/chat/completions -d '{
   "api_secret_key":"xxxxxxxx",
   "messages": [
     {"role":"user","content":"请介绍一下你自己"},
@@ -172,7 +172,7 @@ Creates a completion for the provided prompt and parameters.
 - **请求示例**
 >    
 ```
-curl -XPOST xxxxx/v1/chat/completions -d '{
+curl -H "Content-Type: application/json" -XPOST xxxxx/v1/chat/completions -d '{
   "api_secret_key":"xxxxxxxx",
   "messages": [
     {"role":"user","content":"请介绍一下你自己"},
@@ -246,7 +246,7 @@ Given a prompt and/or an input image, the model will generate a new image.
 - **请求示例**
 >    
 ```
-curl -XPOST xxxxx/v1/images/generations -d '{
+curl -H "Content-Type: application/json" -XPOST xxxxx/v1/images/generations -d '{
   "api_secret_key":"xxxxxxxx",
   "prompt": "A cute baby sea otter",
 }'  | iconv -f utf-8 -t utf-8
