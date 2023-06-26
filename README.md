@@ -96,6 +96,12 @@ curl -H "Content-Type: application/json" -XPOST xxxxx/v1/chat/completions -d '{
     "total_tokens": 668
   }
 }
+注意事项！！！注意事项！！注意事项！！
+============================================
+现在主要发现是有2个问题，
+第1个是要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8
+第2个问题是messages传的不对，messages是array
+==============================================
 ```
 #### 2、Completions
 
@@ -279,5 +285,6 @@ curl -H "Content-Type: application/json" -XPOST xxxxx/v1/images/generations -d '
 2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送免费token）  
 ![image](https://user-images.githubusercontent.com/38256442/231513453-0b1251d9-b00e-4b9e-9c3d-0d9b9e65e721.png)  
 3、微信讨论群（扫码添加客服入群）：  
-![xiaoyi客服1号-小](https://user-images.githubusercontent.com/38256442/233920603-7e0b16c2-c475-464a-89ef-4f76bcdaee59.png)
+![小-大模型交流群-加入群聊二维码](https://github.com/xing61/xiaoyi-robot/assets/38256442/06328623-a25c-4f9d-b350-aa5f8bc4d20e)
+
 
