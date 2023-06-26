@@ -6,6 +6,12 @@
 ## API文档 ##
 
 [TOC]
+注意事项！！！注意事项！！注意事项！！
+============================================
+现在主要发现是有2个问题，
+第1个是要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8
+第2个问题是messages传的不对，messages是array
+==============================================
 
 #### 1、创建chat
 
@@ -96,12 +102,6 @@ curl -H "Content-Type: application/json" -XPOST xxxxx/v1/chat/completions -d '{
     "total_tokens": 668
   }
 }
-注意事项！！！注意事项！！注意事项！！
-============================================
-现在主要发现是有2个问题，
-第1个是要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8
-第2个问题是messages传的不对，messages是array
-==============================================
 ```
 #### 2、Completions
 
