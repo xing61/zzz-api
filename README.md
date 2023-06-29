@@ -279,11 +279,11 @@ curl -H "Content-Type: application/json" -XPOST xxxxx/v1/images/generations -d '
 }
 ```
 
-- **联系我们**  
-1、微信公众号：小一机器人  
+- **项目交流**  
+1、微信公众号：小一机器人，  
 2、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送免费token）  
 ![image](https://user-images.githubusercontent.com/38256442/231513453-0b1251d9-b00e-4b9e-9c3d-0d9b9e65e721.png)  
-3、微信讨论群（扫码添加客服入群）：  
+3、微信交流群（如果你也对大模型感兴趣，欢迎加入群聊参与讨论交流）：  
 ![小-大模型交流群-加入群聊二维码](https://github.com/xing61/xiaoyi-robot/assets/38256442/06328623-a25c-4f9d-b350-aa5f8bc4d20e)
 
 
