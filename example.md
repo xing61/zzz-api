@@ -1,3 +1,9 @@
+注意事项！！！注意事项！！注意事项！！
+============================================  
+现在主要发现是有2个问题，  
+1、要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
+2、messages传的不对，messages是array  
+============================================== 
 ```
 php示例代码：  
 $arr = array();
