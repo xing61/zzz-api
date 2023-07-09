@@ -1,7 +1,7 @@
 # 小一机器人-提供ChatGPT的API
 
 #### 介绍
-小一机器人，提供ChatGPT的API调用，支持：gpt-4，gpt-3.5。
+小一机器人，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。
 
 ## API文档 ##
 
