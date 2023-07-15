@@ -22,7 +22,7 @@
 1、要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array  
 ``` 
-
+注：以下所有接口的base_url: http://flag.smarttrot.com/index.php/
 #### 1、创建chat
 
 调用本接口，发起一次对话请求
