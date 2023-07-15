@@ -7,7 +7,7 @@
 要美元的银行卡？  
 通通不用的，直接调用就行，简单粗暴，关键好用！！ 
 - **项目交流**  
-1、微信公众号：小一机器人，开发者单独的Secret Key，也包括请求的base_url，请从微信公众号“小一机器人”，点击“大模型合作”菜单中获得  
+1、微信公众号：小一机器人，开发者单独的Secret Key，也包括请求的base_url，请从微信公众号“小一机器人”，点击“大模型合作”菜单中的“Chat的API”获得  
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/c3a00169-d51b-48f7-b969-2303e9916886)  
 2、微信交流群（如果你也对大模型感兴趣，欢迎加入群聊参与讨论交流）：    
 ![小-大模型交流群-加入群聊二维码](https://github.com/xing61/xiaoyi-robot/assets/38256442/06328623-a25c-4f9d-b350-aa5f8bc4d20e)   
@@ -43,7 +43,7 @@
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
-| api_secret_key| string| 是| 开发者单独的Secret Key，也包括请求的base_url，请从微信公众号“小一机器人”，点击“大模型合作”菜单中获得
+| api_secret_key| string| 是| 开发者单独的Secret Key，也包括请求的base_url，请从微信公众号“小一机器人”，点击“大模型合作”菜单中的“Chat的API”获得
 | model| string| 否| 大模型的类别，目前支持：gpt-4，gpt-3.5。默认gpt-3.5|
 | messages| List(message)| 是| 聊天上下文信息。说明:<br>（1）messages成员不能为空，1个成员表示单轮对话，多个成员表示多轮对话。<br>（2）最后一个message为当前请求的信息，前面的message为历史对话信息。<br>（3）必须为奇数个成员，成员中message的role必须依次为user、assistant。<br>（4）最后一个message的content长度（即此轮对话的问题）不能超过2000个字符；如果messages中content总长度大于2000字符，系统会依次遗忘最早的历史会话，直到content的总长度不超过2000个字符。  |
 | stream| bool| 否| 是否以流式接口的形式返回数据，默认false。暂时只支持false。|
