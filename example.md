@@ -4,7 +4,7 @@
 1、要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array  
 ```
-php示例代码：
+php示例代码：（只需换成自己的key）
 ```
 $arr = array();
 $arr['api_secret_key'] = 'dd61320fddde6c6568be8a0b0004a53a';
@@ -19,7 +19,7 @@ $cburl = 'http://flag.smarttrot.com/index.php/api/v1/chat/completions';
 $chatgpt_back = Tool::_request('post', $cburl, $arr);
 $data = json_decode($chatgpt_back, true);
 ```
-python示例代码：
+python示例代码：（只需换成自己的key）
 ```
 import os
 import requests
