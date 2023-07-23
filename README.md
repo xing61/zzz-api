@@ -109,7 +109,7 @@ $arr['user'] = '张三';
 }
 // 调用吧
 $cburl = 'http://flag.smarttrot.com/index.php/api/v1/chat/completions';
-$chatgpt_back = Tool::_request('post', $cburl, $arr);
+$chatgpt_back = Tool::_request('post', $cburl, $arr); // 注意这里post请求要自己添加请求头Content-Type: application/json
 $data = json_decode($chatgpt_back, true);
 ```
 ```
