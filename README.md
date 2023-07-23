@@ -1,12 +1,22 @@
 # 小一机器人-提供ChatGPT的API
 
 #### 介绍
-小一机器人，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。  
+小一机器人，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。为开发者提供优质稳定的OpenAI相关的API调用接口      
 要买openai的账号？  
 要科学上网？  
 要美元的银行卡？  
 通通不用的，直接调用就行，简单粗暴，关键稳定，超级好用！！  
 openai的国内代理，国内接口请求转发，api proxy   
+
+- **相比OpenAI的主要优势**  
+不限制国内使用，可以用微信付款，没有封号风险。  
+无需代理即可访问，没有墙的阻拦。  
+支持GPT4，并且没有每3小时25条消息的限制。  
+无需代理即可访问，没有墙的阻拦。  
+无需代理即可访问，没有墙的阻拦。  
+兼容OpenAI接口格式，可以做到平替。支持vscode插件，支持autoGPT，agentGPT。API用法也可参考官方文档  
+新增对Embeddings支持，可以用接口运行AutoGPT等应用。
+
 - **项目地址**   
 1、微信公众号：小一机器人，开发者单独的Secret Key、余额查询、示例代码等请从微信公众号“小一机器人”，点击菜单“Chat的API”查看  
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/c3a00169-d51b-48f7-b969-2303e9916886)  
