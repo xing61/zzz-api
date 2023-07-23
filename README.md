@@ -1,4 +1,4 @@
-# 优质稳定的OpenAI的API接口 For开发者
+# 优质稳定的OpenAI的API接口-For开发者
 
 #### 介绍
 为开发者提供优质稳定的OpenAI相关的API调用接口。  
