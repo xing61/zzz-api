@@ -7,7 +7,8 @@
 要科学上网？  
 要美元的银行卡？  
 通通不用的，直接调用就行，简单粗暴，关键稳定，超级好用！！  
-openai的国内代理，国内接口请求转发，api proxy   
+openai的国内代理，国内接口请求转发，api proxy  
+各种示例代码：https://github.com/xing61/xiaoyi-robot/blob/main/example.md
 
 - **项目主要优势**  
   * 不限制国内使用，可以用微信充值，没有封号风险。
