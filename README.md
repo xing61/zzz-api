@@ -360,7 +360,7 @@ Creates an embedding vector representing the input text.
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
 | api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得  |    
-| model| string| 是| ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.  |  
+| model| string| 是| ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them. 默认：text-embedding-ada-002（官方推荐） |  
 | input| string| 是| Input text to embed, encoded as a string or array of tokens. To embed multiple inputs in a single request, pass an array of strings or array of token arrays. Each input must not exceed the max input tokens for the model (8191 tokens for text-embedding-ada-002). Example Python code for counting tokens.|  
 | user| string| 否| A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
 
