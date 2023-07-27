@@ -334,3 +334,70 @@ curl -H "Content-Type: application/json" -XPOST xxxxx/v1/images/generations -d '
   ]
 }
 ```
+
+#### 4、Embeddings
+
+Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.
+Related guide: Embeddings
+
+#### 4.1、Create embeddings
+Creates an embedding vector representing the input text.
+
+- **请求URL**
+> [api/v1/embeddings](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| application/json| 
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |
+| api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得  |    
+| model| string| 是| ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them.  |  
+| input| string| 是| Input text to embed, encoded as a string or array of tokens. To embed multiple inputs in a single request, pass an array of strings or array of token arrays. Each input must not exceed the max input tokens for the model (8191 tokens for text-embedding-ada-002). Example Python code for counting tokens.|  
+| user| string| 否| A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
+
+- **请求示例**
+>    
+```
+curl -H "Content-Type: application/json" -XPOST xxxxx/v1/embeddings -d '{
+  "api_secret_key":"xxxxxxxx",
+  "input": "The food was delicious and the waiter...",
+    "model": "text-embedding-ada-002"
+}'  | iconv -f utf-8 -t utf-8
+```
+
+- **返回示例**
+>    
+```
+{
+"code": 0,
+  "msg": "",
+  "object": "list",
+  "data": [
+    {
+      "object": "embedding",
+      "embedding": [
+        0.0023064255,
+        -0.009327292,
+        .... (1536 floats total for ada-002)
+        -0.0028842222,
+      ],
+      "index": 0
+    }
+  ],
+  "model": "text-embedding-ada-002",
+  "usage": {
+    "prompt_tokens": 8,
+    "total_tokens": 8
+  }
+}
+
+```
