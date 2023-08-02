@@ -19,7 +19,8 @@ openai的国内代理，国内接口请求转发，api proxy
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
 
 - **项目地址**   
-1、微信公众号：小一机器人，开发者单独的Secret Key、余额查询、示例代码等请从微信公众号“小一机器人”，点击菜单“Chat的API”查看  
+1、微信公众号：小一机器人，开发者单独的Secret Key、余额查询、示例代码等请从微信公众号“小一机器人”，点击菜单“Chat的API”查看
+账号信息管理：http://flag.smarttrot.com/#/my（暂时充值只能微信充值，所以充值要从微信公众号”小一机器人“中进行） 
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/c3a00169-d51b-48f7-b969-2303e9916886)  
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
 ![微信截图_20230723120823](https://github.com/xing61/xiaoyi-robot/assets/38256442/2d2ad0af-a3ba-4d7f-9ddb-ef0204efc0ac)  
@@ -34,7 +35,8 @@ openai的国内代理，国内接口请求转发，api proxy
 1、要加一个请求头，api接口文档中有说明：curl -H "Content-Type: application/json" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"api_secret_key":"xxxx","messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array  
 ``` 
-注：以下所有接口的base_url: http://flag.smarttrot.com/index.php/
+注：以下所有接口的base_url: http://flag.smarttrot.com/index.php/    
+
 #### 1、创建chat
 
 调用本接口，发起一次对话请求
