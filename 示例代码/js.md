@@ -12,7 +12,7 @@ export const chatgpt = params => {
     data: params,
     headers: {
       'Content-Type': 'application/json',
-      "Authorization: Bearer ".api_secret_key
+      'Authorization': 'Bearer '+api_secret_key
     }
   }).then(res => res.data)
 }
