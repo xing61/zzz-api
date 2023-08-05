@@ -1,4 +1,5 @@
-'''
+js示例代码：（只需换成自己的key）
+```
 // chatgpt.js文件
 // 请求接口
 import axios from "axios";
@@ -23,4 +24,4 @@ chatgpt({
       {"role": "user", "content": "1+100="}
     ]
 }).then(res => {console.log(res)})
-'''
+```
