@@ -17,6 +17,7 @@ openai的国内代理，国内接口请求转发，api proxy
   * 支持GPT4，并且没有每3小时25条消息的限制。  
   * 兼容OpenAI接口格式，可以做到平替。支持vscode插件，支持autoGPT，agentGPT。API用法也可参考官方文档  
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
+  * 新增对stream模式的支持，可以支持原生的各种应用
   * 更多特性支持，敬请期待。也可直接向我们提交需求哦
 
 - **项目地址**   
@@ -64,7 +65,7 @@ openai的国内代理，国内接口请求转发，api proxy
 | api_secret_key| string| 是| 开发者单独的api_secret_key，请从微信公众号“小一机器人”，点击菜单“Chat的API”获得
 | model| string| 否| 大模型的类别，目前支持：gpt-4, gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613。默认gpt-3.5-turbo|
 | messages| List(message)| 是| 聊天上下文信息。说明:<br>（1）messages成员不能为空，1个成员表示单轮对话，多个成员表示多轮对话。<br>（2）最后一个message为当前请求的信息，前面的message为历史对话信息。<br>（3）必须为奇数个成员，成员中message的role必须依次为user、assistant。<br>（4）最后一个message的content长度（即此轮对话的问题）不能超过2000个字符；如果messages中content总长度大于2000字符，系统会依次遗忘最早的历史会话，直到content的总长度不超过2000个字符。  |
-| stream| bool| 否| 是否以流式接口的形式返回数据，默认false。暂时只支持false。|
+| stream| bool| 否| 是否以流式接口的形式返回数据，默认false。|
 | user| string| 否| 表示最终用户的唯一标识符，可以监视和检测滥用行为，防止接口恶意调用。|
 
 - **message说明**
