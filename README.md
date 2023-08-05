@@ -280,8 +280,7 @@ Creates a completion for the provided prompt and parameters.
 - **请求示例**
 >    
 ```
-curl -H "Content-Type: application/json" -XPOST xxxxx/v1/chat/completions -d '{
-  "api_secret_key":"xxxxxxxx",
+curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST xxxxx/v1/chat/completions -d '{
   "messages": [
     {"role":"user","content":"请介绍一下你自己"}
   ]
@@ -359,8 +358,7 @@ Given a prompt and/or an input image, the model will generate a new image.
 - **请求示例**
 >    
 ```
-curl -H "Content-Type: application/json" -XPOST xxxxx/v1/images/generations -d '{
-  "api_secret_key":"xxxxxxxx",
+curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST xxxxx/v1/images/generations -d '{
   "prompt": "A cute baby sea otter",
 }'  | iconv -f utf-8 -t utf-8
 ```
@@ -415,8 +413,7 @@ Creates an embedding vector representing the input text.
 - **请求示例**
 >    
 ```
-curl -H "Content-Type: application/json" -XPOST xxxxx/v1/embeddings -d '{
-  "api_secret_key":"xxxxxxxx",
+curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST xxxxx/v1/embeddings -d '{
   "input": "The food was delicious and the waiter...",
     "model": "text-embedding-ada-002"
 }'  | iconv -f utf-8 -t utf-8
