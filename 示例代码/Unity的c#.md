@@ -10,7 +10,6 @@ using LitJson; //这个需要百度下载一个LitJson库然后放入Assets目�
 public class ChatGPTScripts : MonoBehaviour
 {
     private string postUrl = "http://flag.smarttrot.com/index.php/api/v1/chat/completions";
-    private const string apiSecretKey = "api_secret_key";
     private const string user = "user";
     private const string messages = "messages";
 
@@ -23,8 +22,8 @@ public class ChatGPTScripts : MonoBehaviour
         WWWForm form = new WWWForm();/**/
         
         // 配置数据
+        string apiSecretKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         JsonData data = new JsonData();
-        data[apiSecretKey] = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         data[user] = "测试者";
         
         // messages
@@ -49,6 +48,7 @@ public class ChatGPTScripts : MonoBehaviour
 
         // 发送 https
         request.SetRequestHeader("Content-Type", "application/json");
+        request.SetRequestHeader("Authorization", "Bearer "+apiSecretKey);
         yield return request.SendWebRequest();
         if(request.isHttpError || request.isNetworkError)
         {
