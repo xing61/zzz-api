@@ -224,13 +224,12 @@ Creates a completion for the provided prompt and parameters.
 | 名称      |     值 | 
 | :-------- | :--------|
 | Content-Type| application/json|  
-| Authorization| Bearer api_secret_key|  
+| Authorization| Bearer $api_secret_key|  
 
 - **请求参数**
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
-| api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得|
 | model| string| 是| ID of the model to use. You can use the List models API to see all of your available models, <br>or see our Model overview for descriptions of them.|
 | prompt| string or array| 否| The prompt(s) to generate completions for, encoded as a string, array of strings,<br> array of tokens, or array of token arrays.<br>Note that <|endoftext|> is the document separator that the model sees during training, <br>so if a prompt is not specified the model will generate as if from the beginning of a new document. <br>Defaults to <|endoftext|>|
 | suffix| string | 否| The suffix that comes after a completion of inserted text.Defaults to null|
@@ -330,13 +329,12 @@ Given a prompt and/or an input image, the model will generate a new image.
 | 名称      |     值 | 
 | :-------- | :--------|
 | Content-Type| application/json| 
-| Authorization| Bearer api_secret_key|  
+| Authorization| Bearer $api_secret_key|  
 
 - **请求参数**
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
-| api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得
 | prompt| string| 是| A text description of the desired image(s). The maximum length is 1000 characters.  |
 | n| int| 否| The number of images to generate. Must be between 1 and 10. Defaults to 1|
 | size| string| 否| The size of the generated images. Must be one of 256x256, 512x512, or 1024x1024. Defaults to 1024x1024|
@@ -404,13 +402,12 @@ Creates an embedding vector representing the input text.
 | 名称      |     值 | 
 | :-------- | :--------|
 | Content-Type| application/json| 
-| Authorization| Bearer api_secret_key|  
+| Authorization| Bearer $api_secret_key|  
 
 - **请求参数**
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
-| :-------- | :--------| :------ | :------ |
-| api_secret_key| string| 是| 开发者单独的Secret Key，请从微信公众号“小一机器人”中获得  |    
+| :-------- | :--------| :------ | :------ |   
 | model| string| 是| ID of the model to use. You can use the List models API to see all of your available models, or see our Model overview for descriptions of them. 默认：text-embedding-ada-002（官方推荐） |  
 | input| string| 是| Input text to embed, encoded as a string or array of tokens. To embed multiple inputs in a single request, pass an array of strings or array of token arrays. Each input must not exceed the max input tokens for the model (8191 tokens for text-embedding-ada-002). Example Python code for counting tokens.|  
 | user| string| 否| A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. |
