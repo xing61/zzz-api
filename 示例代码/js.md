@@ -4,13 +4,15 @@ js示例代码：（只需换成自己的key）
 // 请求接口
 import axios from "axios";
 
+api_secret_key='xxxx';
 export const chatgpt = params => {
   return axios ({
     method: 'post',
     url: 'http://flag.smarttrot.com/index.php/api/v1/chat/completions',
     data: params,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      "Authorization: Bearer ".api_secret_key
     }
   }).then(res => res.data)
 }
@@ -19,7 +21,6 @@ import {chatgpt} from "./chatgpt.js";
 
 // 调用chatgpt接口
 chatgpt({
-    "api_secret_key":'xxxx',
     "messages": [
       {"role": "user", "content": "1+100="}
     ]
