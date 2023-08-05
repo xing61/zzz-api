@@ -8,7 +8,7 @@
 要美元的银行卡？  
 通通不用的，直接调用就行，简单粗暴，关键稳定，超级好用！！  
 openai的国内代理，国内接口请求转发，api proxy  
-各种示例代码：[https://github.com/xing61/xiaoyi-robot/blob/main/example.md](https://github.com/xing61/xiaoyi-robot/tree/main/%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)   
+各种示例代码：https://github.com/xing61/xiaoyi-robot/tree/main/%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81    
 
 - **项目主要优势**  
   * 不限制国内使用，可以用微信充值，没有封号风险。
@@ -123,7 +123,7 @@ Authorization: Bearer $api_secret_key
 
 - **请求示例**
 >    
-更多示例见本页：
+更多示例见本页：https://github.com/xing61/xiaoyi-robot/tree/main/%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81   
 ```
 curl -H "Content-Type: application/json" 
      -H "Authorization: Bearer $api_secret_key" 
