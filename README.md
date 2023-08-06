@@ -10,8 +10,6 @@
 openai的国内代理，国内接口请求转发，api proxy  
 各种示例代码：https://github.com/xing61/xiaoyi-robot/tree/main/%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81    
 
-- **拟支持的项目列表**  
-  * GPT 学术优化 (GPT Academic)，TBD
 - **项目主要优势**  
   * 不限制国内使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
