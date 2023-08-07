@@ -4,4 +4,4 @@
 一般可以通过语言库中的接口，设置OPENAI_API_KEY环境变量为小一后台获取的Key<br>
 
 - 2、自定义域名http://flag.smarttrot.com/index.php/api/v1替换官方的域名: https://api.openai.com/v1<br>
-一般也是通过语言库的接口，设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1/chat/completions<br>
+一般也是通过语言库的接口，设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1<br>
