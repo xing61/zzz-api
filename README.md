@@ -28,16 +28,14 @@ openai的国内代理，国内接口请求转发，api proxy
 ![微信截图_20230723120823](https://github.com/xing61/xiaoyi-robot/assets/38256442/2d2ad0af-a3ba-4d7f-9ddb-ef0204efc0ac)  
 3、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送免费token）  
 ![qq群-微信截图_20230723120926](https://github.com/xing61/xiaoyi-robot/assets/38256442/7805499d-e0e5-41fb-b5a3-a90237b76730)  
-
-## API文档 ##
-
+- **注意事项**   
 注意事项！！ 
 ``` 
 现在主要发现是有2个问题，  
 1、要加一个请求头，api接口文档中有说明：
 curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array  
-``` 
+```
 注：<br>
 1、以下所有接口的base_url: http://flag.smarttrot.com/index.php/api/   
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从微信公众号“小一机器人”，点击菜单“Chat的API”获得。 
@@ -46,12 +44,13 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 Content-Type: application/json
 Authorization: Bearer $api_secret_key
 ```
+- **典型用法**    
 典型用法：<br>
 1、设置OPENAI_API_KEY环境变量为：小一后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1，替换官方的域名: https://api.openai.com/v1 <br>
 ![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/031bb95b-3573-4339-b1dd-88e1c7fc6e3f)
 
-
+## API文档 ##
 #### 1、创建chat
 
 调用本接口，发起一次对话请求
