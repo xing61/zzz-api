@@ -46,6 +46,9 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 Content-Type: application/json
 Authorization: Bearer $api_secret_key
 ```
+典型用法：
+![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/031bb95b-3573-4339-b1dd-88e1c7fc6e3f)
+
 
 #### 1、创建chat
 
