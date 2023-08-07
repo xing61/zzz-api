@@ -46,7 +46,9 @@ Authorization: Bearer $api_secret_key
 - **典型用法**    
 典型用法：<br>
 1、设置OPENAI_API_KEY环境变量为：小一后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
-2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1，替换官方的域名: https://api.openai.com/v1 <br>
+2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1,  替换官方的域名:  https://api.openai.com/v1 <br>
+![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/97326d94-9297-4edb-9c06-df658d10e356)
+
 
 ## API文档 ##
 #### 1、创建chat
