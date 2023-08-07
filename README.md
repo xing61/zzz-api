@@ -21,8 +21,7 @@ openai的国内代理，国内接口请求转发，api proxy
   * 更多特性支持，敬请期待。也可直接向我们提交需求哦
 
 - **项目地址**   
-1、微信公众号：小一机器人，开发者单独的Secret Key、余额查询、示例代码等请从微信公众号“小一机器人”，点击菜单“Chat的API”查看。     
-账号信息管理：http://flag.smarttrot.com/#/my,  （暂时充值只能微信充值，所以充值要从微信公众号”小一机器人“中进行）      
+1、微信公众号：小一机器人，开发者单独的Secret Key、余额查询、示例代码等请从微信公众号“小一机器人”，点击菜单“Chat的API”查看。           
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/c3a00169-d51b-48f7-b969-2303e9916886)  
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
 ![微信截图_20230723120823](https://github.com/xing61/xiaoyi-robot/assets/38256442/2d2ad0af-a3ba-4d7f-9ddb-ef0204efc0ac)  
