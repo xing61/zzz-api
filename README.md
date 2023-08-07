@@ -46,7 +46,9 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 Content-Type: application/json
 Authorization: Bearer $api_secret_key
 ```
-典型用法：
+典型用法：<br>
+1、设置OPENAI_API_KEY环境变量为：小一后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
+2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1，替换官方的域名: https://api.openai.com/v1 <br>
 ![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/031bb95b-3573-4339-b1dd-88e1c7fc6e3f)
 
 
