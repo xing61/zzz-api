@@ -20,5 +20,6 @@ print(chat_completion.choices[0].message.content)
 ``` 
 Hello there! How can I assist you today ? 
 ```
-
+============================================================================
+=============================================================================
 ![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/df09923e-4b75-492c-a3cd-99c2b3db5abf)
