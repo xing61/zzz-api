@@ -11,13 +11,14 @@ openai的国内代理，国内接口请求转发，api proxy
 各种示例代码：https://github.com/xing61/xiaoyi-robot/tree/main/%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81    
 
 - **项目主要优势**  
-  * 不限制国内使用，可以用微信充值，没有封号风险。
+  * 不限制使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
-  * 无需代理即可访问，没有墙的阻拦。  
+  * 无需代理即可访问，没有x的阻拦。  
   * 支持GPT4，并且没有每3小时25条消息的限制。  
   * 兼容OpenAI接口格式，可以做到平替。支持vscode插件，支持autoGPT，agentGPT。API用法也可参考官方文档  
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
   * 新增对stream模式的支持，可以支持原生的各种应用
+  * 支持文字生成图片
   * 更多特性支持，敬请期待。也可直接向我们提交需求哦
 
 - **项目地址**   
@@ -25,7 +26,7 @@ openai的国内代理，国内接口请求转发，api proxy
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/c3a00169-d51b-48f7-b969-2303e9916886)  
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
 ![微信截图_20230723120823](https://github.com/xing61/xiaoyi-robot/assets/38256442/2d2ad0af-a3ba-4d7f-9ddb-ef0204efc0ac)  
-3、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样。另外现在加入邀请内测还能赠送免费token）  
+3、QQ群（彩蛋：群里有qq机器人：小一机器人，@他即可像访问chatgpt一样）  
 ![qq群-微信截图_20230723120926](https://github.com/xing61/xiaoyi-robot/assets/38256442/7805499d-e0e5-41fb-b5a3-a90237b76730)  
 - **注意事项**   
 注意事项！！ 
