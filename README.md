@@ -103,7 +103,7 @@ Authorization: Bearer $api_secret_key
 >
 | 返回参数      |     参数类型 |   参数说明   |
 | :-------- | :--------| :------ |
-| code|   int|  执行结果code|
+| code|   int|  执行结果code，0表示成功，其它表示失败，失败信息见msg字段|
 | msg|   String|  执行结果消息|
 | id| string| 本轮对话的id。|
 | created| int| 时间戳。|
