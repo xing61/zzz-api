@@ -146,7 +146,7 @@ php示例代码：
 $api_secret_key = 'xxxxxxxxxxxxxxxxxx'; // 你的api_secret_key
 $headers = array(
     "Content-Type: application/json",
-    "Authorization: Bearer ".$api_secret_key,
+    "Authorization: Bearer ".$api_secret_key
 );
 // 设置请求参数
 $params = array();
