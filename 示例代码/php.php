@@ -50,7 +50,7 @@ $data = json_decode($chatgpt_resp, true);
             /**************处理post相关选项******************/
             //是否为post请求 ,处理请求数据
             curl_setopt($curl,CURLOPT_POST,true);
-            curl_setopt($curl,CURLOPT_POSTFIELDS,is_array($data)?http_build_query($data):$data);
+            curl_setopt($curl,CURLOPT_POSTFIELDS,json_encode($data, JSON_UNESCAPED_UNICODE));
         }
         //是否处理响应头
         curl_setopt($curl,CURLOPT_HEADER,false);
