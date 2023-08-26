@@ -1,4 +1,6 @@
+苹果系统，object-c语言的示例代码：<br>
 
+```
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
@@ -38,3 +40,4 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+```
