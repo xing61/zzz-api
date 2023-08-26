@@ -6,7 +6,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *apiKey = @"你的小一的api-key";
-        NSString *urlString = @"http://flag.smarttrot.com/index.php/v1/chat/completions";
+        NSString *urlString = @"http://flag.smarttrot.com/index.php/api/v1/chat/completions";
         
         NSDictionary *parameters = @{
             @"model": @"gpt-3.5-turbo",
