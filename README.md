@@ -34,10 +34,11 @@ openai的国内代理，国内接口请求转发，api proxy
 - **注意事项**   
 注意事项！！ 
 ``` 
-现在主要发现是有2个问题，  
+现在主要发现是有3个问题，  
 1、要加一个请求头，api接口文档中有说明：
 curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
-2、messages传的不对，messages是array  
+2、messages传的不对，messages是array
+3、api_secret_key传的不对，亲，不能再传openai的了，你要传你从智增增拿到的key（openai已经没用了哈）       
 ```
 注：<br>
 1、以下所有接口的base_url: http://flag.smarttrot.com/index.php/api/   
