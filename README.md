@@ -513,3 +513,48 @@ transcript = openai.Audio.transcribe("whisper-1", audio_file)
 }
 
 ```
+
+#### 4.2、Create translation
+Translates audio into English.
+
+- **请求URL**
+> [v1/audio/translations](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| multipart/form-data| 
+| Authorization| Bearer $api_secret_key|  
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |   
+| file| file| 是|要识别的音频文件对象（不是文件名），可以使用以下格式之一：flac、mp3、mp4、mpeg、mpga、m4a、ogg、wav或webm。 |
+| model| string| 是|ID of the model to use. Only whisper-1 is currently available.   |  
+| prompt| string| 否| An optional text to guide the model's style or continue a previous audio segment. The prompt should match the audio language.|  
+| response_format| string| 否| The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.默认：json |
+| temperature| string| 否|The sampling temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. 默认：0  |    
+
+- **请求示例**
+>    
+```
+import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
+audio_file = open("german.m4a", "rb")
+transcript = openai.Audio.translate("whisper-1", audio_file)
+```
+
+- **返回示例**
+>    
+```
+{
+  "text": "Hello, my name is Wolfgang and I come from Germany. Where are you heading today?"
+}
+
+```
