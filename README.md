@@ -19,6 +19,7 @@ openai的国内代理，国内接口请求转发，api proxy
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
   * 新增对stream模式的支持，可以支持原生的各种应用
   * 支持文字生成图片
+  * 支持官方的Whisper模型，支持transcriptions和translations，可以做语音识别和翻译
   * 更多特性支持，敬请期待。也可直接向我们提交需求哦
 
 - **项目地址**   
