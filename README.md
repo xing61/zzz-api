@@ -459,3 +459,57 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 }
 
 ```
+#### 4、Audio   
+
+介绍  
+语音转文本API基于我们先进的开源large-v2 Whisper模型提供了两个端点，分别是“transcriptions”（转录）和“translations”（翻译）。它们可以用于：
+
+将音频转录为与音频语言相同的文本。  
+将音频翻译并转录为英文。  
+目前，文件上传限制为25 MB，支持以下输入文件类型：mp3、mp4、mpeg、mpga、m4a、wav和webm。  
+
+#### 4.1、Create transcription
+Transcribes audio into the input language.   
+
+- **请求URL**
+> [v1/audio/transcriptions](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| multipart/form-data| 
+| Authorization| Bearer $api_secret_key|  
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |   
+| file| file| 是|要识别的音频文件对象（不是文件名），可以使用以下格式之一：flac、mp3、mp4、mpeg、mpga、m4a、ogg、wav或webm。 |
+| model| string| 是|ID of the model to use. Only whisper-1 is currently available.   |  
+| prompt| string| 否| An optional text to guide the model's style or continue a previous audio segment. The prompt should match the audio language.|  
+| response_format| string| 否| The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.默认：json |
+| temperature| string| 否|The sampling temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. 默认：0  |  
+| language| string| 否|The language of the input audio. Supplying the input language in ISO-639-1 format will improve accuracy and latency.   |    
+
+- **请求示例**
+>    
+```
+import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
+audio_file = open("audio.mp3", "rb")
+transcript = openai.Audio.transcribe("whisper-1", audio_file)
+```
+
+- **返回示例**
+>    
+```
+{
+  "text": "Imagine the wildest idea that you've ever had, and you're curious about how it might scale to something that's a 100, a 1,000 times bigger. This is a place where you can get to do that."
+}
+
+```
