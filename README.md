@@ -44,7 +44,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 ```
 注：<br>
 1、以下所有接口的base_url: http://flag.smarttrot.com/index.php/api/   
-2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从微信公众号“小一机器人”，点击菜单“Chat的API”获得。 
+2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从智增增管理后台获得。 
 请求头形如：  
 ```
 Content-Type: application/json
@@ -52,7 +52,7 @@ Authorization: Bearer $api_secret_key
 ```
 - **典型用法**    
 典型用法：<br>
-1、设置OPENAI_API_KEY环境变量为：小一后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
+1、设置OPENAI_API_KEY环境变量为：智增增后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1,  替换官方的域名:  https://api.openai.com/v1 <br>
 ![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/14cf6382-c6e8-465c-ab13-49989020fd5e)
 
@@ -80,7 +80,7 @@ Authorization: Bearer $api_secret_key
 | 名称      |     值 | 参数说明   |
 | :-------- | :--------| :------ |
 | Content-Type| application/json| | 
-| Authorization| Bearer $api_secret_key| 开发者单独的api_secret_key，请从微信公众号“小一机器人”，点击菜单“Chat的API”获得。推荐在header中设置此字段 | 
+| Authorization| Bearer $api_secret_key| 开发者单独的api_secret_key，请从智增增管理后台获得。推荐在header中设置此字段 | 
 
 - **请求参数**
 >
@@ -148,7 +148,7 @@ curl -H "Content-Type: application/json"
      -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{
   "messages": [
     {"role":"user","content":"请介绍一下你自己"},
-    {"role":"assistant","content":"您好，我是小一机器人。我能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感。"},
+    {"role":"assistant","content":"您好，我是智增增机器人。我能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感。"},
     {"role":"user","content": "1+100="}
   ]
 }'  | iconv -f utf-8 -t utf-8
