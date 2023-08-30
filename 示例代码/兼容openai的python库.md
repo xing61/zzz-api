@@ -22,4 +22,5 @@ Hello there! How can I assist you today ?
 ```
 ============================================================================
 =============================================================================
-![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/df09923e-4b75-492c-a3cd-99c2b3db5abf)
+![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/c704962b-c9e1-4fa3-9211-f90f5e3b7874)
+
