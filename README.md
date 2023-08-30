@@ -62,7 +62,9 @@ Authorization: Bearer $api_secret_key
 ![微信截图_20230823152755](https://github.com/xing61/xiaoyi-robot/assets/38256442/490f592d-85ba-42ff-bf85-801d6c459c9c)
 
 
-## API文档 ##
+## API文档 ##    
+（接口请求规范完全和openai一样，可以直接以openai的接口文档为准：https://platform.openai.com/docs/api-reference/introduction）<br>
+
 #### 1、创建chat
 
 调用本接口，发起一次对话请求
