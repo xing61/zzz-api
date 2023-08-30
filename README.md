@@ -643,21 +643,11 @@ Response includes details of the enqueued job including job status and the name 
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |   
-| training_file| string| 是|The ID of an uploaded file that contains training data.<br>
-
-See upload file for how to upload a file.<br>
-
-Your dataset must be formatted as a JSONL file. Additionally, you must upload your file with the purpose fine-tune. |
+| training_file| string| 是|The ID of an uploaded file that contains training data.<br>See upload file for how to upload a file.<br>Your dataset must be formatted as a JSONL file. Additionally, you must upload your file with the purpose fine-tune. |
 | model| string| 是|The name of the model to fine-tune. |
-| validation_file| string| 否|The ID of an uploaded file that contains validation data.<br>
-
-If you provide this file, the data is used to generate validation metrics periodically during fine-tuning. These metrics can be viewed in the fine-tuning results file. The same data should not be present in both train and validation files.<br>
-
-Your dataset must be formatted as a JSONL file. You must upload your file with the purpose fine-tune.  | 
+| validation_file| string| 否|The ID of an uploaded file that contains validation data.<br>If you provide this file, the data is used to generate validation metrics periodically during fine-tuning. These metrics can be viewed in the fine-tuning results file. The same data should not be present in both train and validation files.<br>Your dataset must be formatted as a JSONL file. You must upload your file with the purpose fine-tune.  | 
 | hyperparameters| object| 否|The hyperparameters used for the fine-tuning job.|
-| suffix| object| 否|A string of up to 40 characters that will be added to your fine-tuned model name.<br>
-
-For example, a suffix of "custom-model-name" would produce a model name like ft:gpt-3.5-turbo:openai:custom-model-name:7p4lURel.|
+| suffix| object| 否|A string of up to 40 characters that will be added to your fine-tuned model name.<br>For example, a suffix of "custom-model-name" would produce a model name like ft:gpt-3.5-turbo:openai:custom-model-name:7p4lURel.|
 
 - **请求示例**
 >    
