@@ -1,7 +1,7 @@
-# 优质稳定的OpenAI的API接口-For开发者
+# 优质稳定的OpenAI的API接口-For企业和开发者
 
 #### 介绍
-为开发者提供优质稳定的OpenAI相关的API调用接口。  
+为企业和开发者提供优质稳定的OpenAI相关的API调用接口。  
 智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。      
 要买openai的账号？  
 要科学上网？  
@@ -13,7 +13,7 @@ openai的国内代理，国内接口请求转发，api proxy
 - **项目主要优势**  
   * 不限制使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
-  * 无需代理即可访问，没有x的阻拦。  
+  * 无需代理即可访问，没有任何的阻拦。  
   * 支持GPT4，并且没有每3小时25条消息的限制。  
   * 兼容OpenAI接口格式，可以做到平替。支持vscode插件，支持autoGPT，agentGPT。API用法也可参考官方文档  
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
@@ -54,7 +54,8 @@ Authorization: Bearer $api_secret_key
 典型用法：<br>
 1、设置OPENAI_API_KEY环境变量为：小一后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1,  替换官方的域名:  https://api.openai.com/v1 <br>
-![官方库支持示例](https://github.com/xing61/xiaoyi-robot/assets/38256442/97326d94-9297-4edb-9c06-df658d10e356)
+![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/14cf6382-c6e8-465c-ab13-49989020fd5e)
+
 
 - **场景示例**    
 更多场景陆续演示：<br>
@@ -557,6 +558,131 @@ transcript = openai.Audio.translate("whisper-1", audio_file)
 ```
 {
   "text": "Hello, my name is Wolfgang and I come from Germany. Where are you heading today?"
+}
+
+```
+#### 5、File    
+
+Files are used to upload documents that can be used with features like fine-tuning.    
+
+#### 5.1、Upload file   
+Upload a file that contains document(s) to be used across various endpoints/features. Currently, the size of all the files uploaded by one organization can be up to 1 GB. Please contact us if you need to increase the storage limit.      
+
+- **请求URL**
+> [v1/files](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| multipart/form-data| 
+| Authorization| Bearer $api_secret_key|  
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |   
+| file| file| 是|Name of the JSON Lines file to be uploaded. If the purpose is set to "fine-tune", the file will be used for fine-tuning. |
+| purpose| string| 是|The intended purpose of the uploaded documents. Use "fine-tune" for fine-tuning. This allows us to validate the format of the uploaded file.   |    
+
+- **请求示例**
+>    
+```
+import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.File.create(
+  file=open("mydata.jsonl", "rb"),
+  purpose='fine-tune'
+)
+```
+
+- **返回示例**
+>    
+```
+{
+  "id": "file-abc123",
+  "object": "file",
+  "bytes": 140,
+  "created_at": 1613779121,
+  "filename": "mydata.jsonl",
+  "purpose": "fine-tune",
+  "status": "uploaded" | "processed" | "pending" | "error"
+}
+
+```
+#### 6、Fine-tuning     
+
+Manage fine-tuning jobs to tailor a model to your specific training data.   
+微调（fine-tune）是什么？   
+网上内容多的是，不过多解释，只讲核心的   
+微调的基本思想是，先在大规模文本数据上预训练一个大型的语言模型，例如 GPT-3.5（这部分是大模型），然后使用特定任务的数据集（如法律、医疗），进一步对模型进行训练，以适应特定的任务（这部分是微调）。在这个过程中，模型的参数会进行微小的调整，使其在特定业务场景上的性能更好。    
+
+#### 6.1、Create fine-tuning job       
+Creates a job that fine-tunes a specified model from a given dataset.   
+
+Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.      
+
+- **请求URL**
+> [v1/fine_tuning/jobs](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| application/json| 
+| Authorization| Bearer $api_secret_key|  
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |   
+| training_file| string| 是|The ID of an uploaded file that contains training data.<br>
+
+See upload file for how to upload a file.<br>
+
+Your dataset must be formatted as a JSONL file. Additionally, you must upload your file with the purpose fine-tune. |
+| model| string| 是|The name of the model to fine-tune. |
+| validation_file| string| 否|The ID of an uploaded file that contains validation data.<br>
+
+If you provide this file, the data is used to generate validation metrics periodically during fine-tuning. These metrics can be viewed in the fine-tuning results file. The same data should not be present in both train and validation files.<br>
+
+Your dataset must be formatted as a JSONL file. You must upload your file with the purpose fine-tune.  | 
+| hyperparameters| object| 否|The hyperparameters used for the fine-tuning job.|
+| suffix| object| 否|A string of up to 40 characters that will be added to your fine-tuned model name.<br>
+
+For example, a suffix of "custom-model-name" would produce a model name like ft:gpt-3.5-turbo:openai:custom-model-name:7p4lURel.|
+
+- **请求示例**
+>    
+```
+import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.FineTuningJob.create(training_file="file-abc123", model="gpt-3.5-turbo")
+
+```
+
+- **返回示例**
+>    
+```
+{
+  "object": "fine_tuning.job",
+  "id": "ft-AF1WoRqd3aJAHsqc9NY7iL8F",
+  "model": "gpt-3.5-turbo-0613",
+  "created_at": 1614807352,
+  "fine_tuned_model": null,
+  "organization_id": "org-123",
+  "result_files": [],
+  "status": "pending",
+  "validation_file": null,
+  "training_file": "file-abc123",
 }
 
 ```
