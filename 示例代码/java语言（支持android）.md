@@ -45,7 +45,7 @@ public class ChatDemo
 
         // 将请求数据写入输出流
         try (DataOutputStream outputStream = new DataOutputStream(connection.getOutputStream())) {
-            outputStream.writeBytes(requestData);
+            outputStream.write(requestData.getBytes());
             outputStream.flush();
         }
 
