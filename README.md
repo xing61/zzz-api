@@ -1,9 +1,10 @@
 # 优质稳定的OpenAI的API接口-For企业和开发者
 
 #### 介绍
-为企业和开发者提供优质稳定的OpenAI相关的API调用接口。  
-智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。      
-要买openai的账号？  
+为企业和开发者提供优质稳定的OpenAI相关的API调用接口。    
+为个人用户提供openai的各类插件访问方式。   
+智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。          
+要买openai的账号？   
 要科学上网？  
 要美元的银行卡？  
 通通不用的，直接调用就行，简单粗暴，关键稳定，超级好用！！  
@@ -13,14 +14,15 @@ openai的国内代理，国内接口请求转发，api proxy
   * 不限制使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
   * 无需代理即可访问，没有任何的阻拦。  
-  * 支持GPT4，并且没有每3小时25条消息的限制。  
-  * 兼容OpenAI接口格式，可以做到平替。支持vscode插件，支持autoGPT，agentGPT。API用法也可参考官方文档  
-  * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。
-  * 新增对stream模式的支持，可以支持原生的各种应用
-  * 支持文字生成图片
-  * 支持官方的Whisper模型，支持transcriptions和translations，可以做语音识别和翻译
-  * 支持fine-tune（微调），可以使用自己的数据来微调GPT的模型，详见示例
-  * 更多特性支持，敬请期待。也可直接向我们提交需求哦
+  * 强大的接口能力：支持GPT-3.5，GPT-4，Embedding，Whisper，Fine-tuning，Image等    
+  * 最广泛的插件支持能力：支持插件Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT等各类大模型插件   
+  * 兼容OpenAI接口格式，可以做到平替。   
+  * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。  
+  * 新增对stream模式的支持，可以支持原生的各种应用   
+  * 支持文字生成图片   
+  * 支持官方的Whisper模型，支持transcriptions和translations，可以做语音识别和翻译   
+  * 支持fine-tune（微调），可以使用自己的数据来微调GPT的模型，详见示例  
+  * 更多特性支持，敬请期待。也可直接向我们提交需求哦  
 
 - **项目地址**   
 1、项目官方网址：http://gpt.zhizengzeng.com/#/login   
