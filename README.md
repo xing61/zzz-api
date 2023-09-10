@@ -15,7 +15,7 @@ openai的国内代理，国内接口请求转发，api proxy
   * 不用买openai的账号，不用美元的银行卡。 
   * 无需代理即可访问，没有任何的阻拦。  
   * 强大的接口能力：支持GPT-3.5，GPT-4，Embedding，Whisper，Fine-tuning，Image等    
-  * 最广泛的插件支持能力：支持插件Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT等各类大模型插件   
+  * 最广泛的插件支持能力：支持插件Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT等各类大模型插件。如果仅仅想在插件中使用，可以使用我们这个工具：https://github.com/xing61/chatgpt-plugin-key   
   * 兼容OpenAI接口格式，可以做到平替。   
   * 新增对Embeddings支持，可以用接口运行AutoGPT等应用。  
   * 新增对stream模式的支持，可以支持原生的各种应用   
