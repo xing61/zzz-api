@@ -54,7 +54,7 @@ Authorization: Bearer $api_secret_key
 - **典型用法**    
 典型用法：<br>
 1、设置OPENAI_API_KEY环境变量为：智增增后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
-2、设置OPENAI_API_BASE_URL环境变量为：http://flag.smarttrot.com/index.php/api/v1,  替换官方的域名:  https://api.openai.com/v1 <br>
+2、设置OPENAI_API_BASE_URL环境变量为：`http://flag.smarttrot.com/index.php/api/v1`,  替换官方的域名:  `https://api.openai.com/v1` <br>
 ![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/14cf6382-c6e8-465c-ab13-49989020fd5e)
 
 
