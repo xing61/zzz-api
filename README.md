@@ -2,7 +2,6 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。    
-为个人用户提供openai的各类插件访问方式。   
 智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。          
 要买openai的账号？   
 要科学上网？  
