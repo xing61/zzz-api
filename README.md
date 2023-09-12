@@ -27,7 +27,7 @@ openai的国内代理，国内接口请求转发，api proxy
 1、项目官方网址：http://gpt.zhizengzeng.com/#/login   
    智增增-大模型的API接口服务商   
    开发者单独的Secret Key、余额查询、示例代码等可以从管理后台中获取。     
-2、移动端查看数据，微信公众号：小一机器人，点击菜单“Chat的API”查看。                  
+2、移动端查看数据，微信公众号：小一机器人，点击菜单“我是企业”》“Chat的API”查看。                  
  ![小一机器人-公众号二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/34775bf9-8a23-4bc8-8303-12ee3b1c1425)     
 3、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
 ![微信截图_20230723120823](https://github.com/xing61/xiaoyi-robot/assets/38256442/2d2ad0af-a3ba-4d7f-9ddb-ef0204efc0ac)  
