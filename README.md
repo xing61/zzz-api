@@ -6,7 +6,7 @@
 要买openai的账号？   
 要科学上网？  
 要美元的银行卡？  
-通通不用的，直接调用就行，简单粗暴，关键稳定，超级好用！！  
+通通不用的，直接调用就行，简单粗暴，关键稳定好用！！  
 openai的国内代理，国内接口请求转发，api proxy        
 
 - **项目主要优势**  
@@ -55,11 +55,6 @@ Authorization: Bearer $api_secret_key
 1、设置OPENAI_API_KEY环境变量为：智增增后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 2、设置OPENAI_API_BASE_URL环境变量为：`http://flag.smarttrot.com/index.php/api/v1`,  替换官方的域名:  `https://api.openai.com/v1` <br>
 ![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/14cf6382-c6e8-465c-ab13-49989020fd5e)
-
-
-- **场景示例**    
-更多场景陆续演示：<br>
-![微信截图_20230823152755](https://github.com/xing61/xiaoyi-robot/assets/38256442/490f592d-85ba-42ff-bf85-801d6c459c9c)
 
 
 ## API文档 ##    
