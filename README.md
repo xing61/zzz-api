@@ -42,7 +42,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 3、api_secret_key传的不对，亲，不能再传openai的了，你要传你从智增增拿到的key（不需要有openai的key哈）       
 ```
 注：<br>
-1、以下所有接口的base_url: `http://flag.smarttrot.com/index.php/api/` 或者  `https://flag.smarttrot.com/index.php/api/` （支持https）
+1、以下所有接口的base_url: `http://flag.smarttrot.com/index.php/api/` 或者  `https://flag.smarttrot.com/index.php/api/` （支持https）<br>
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从智增增管理后台获得。 
 请求头形如：  
 ```
