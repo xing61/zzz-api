@@ -14,7 +14,7 @@ int main() {
     CURL* curl;
     CURLcode res;
     std::string apiKey = "你在小一获取的api-key";
-    std::string urlString = "http://flag.smarttrot.com/index.php/api/v1/chat/completions";
+    std::string urlString = "https://flag.smarttrot.com/v1/chat/completions";
     
     // Initialize the Curl library
     curl_global_init(CURL_GLOBAL_ALL);
