@@ -9,7 +9,7 @@ using LitJson; //这个需要百度下载一个LitJson库然后放入Assets目�
 
 public class ChatGPTScripts : MonoBehaviour
 {
-    private string postUrl = "http://flag.smarttrot.com/index.php/api/v1/chat/completions";
+    private string postUrl = "https://flag.smarttrot.com/v1/chat/completions";
     private const string user = "user";
     private const string messages = "messages";
 
