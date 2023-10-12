@@ -14,7 +14,7 @@ import json
 import time
 
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "http://flag.smarttrot.com/index.php/api/v1"
+BASE_URL = "https://flag.smarttrot.com/v1"
 
 # audio_transcriptions
 def audio_transcriptions(file_name):
