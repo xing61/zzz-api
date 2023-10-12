@@ -8,7 +8,7 @@ import os
 import openai
 
 openai.api_key = "您的api_secret_key"
-openai.api_base = "http://flag.smarttrot.com/index.php/api/v1"
+openai.api_base = "https://flag.smarttrot.com/v1"
 
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
