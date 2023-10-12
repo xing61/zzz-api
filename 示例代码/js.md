@@ -8,7 +8,7 @@ api_secret_key='xxxx';
 export const chatgpt = params => {
   return axios ({
     method: 'post',
-    url: 'http://flag.smarttrot.com/index.php/api/v1/chat/completions',
+    url: 'https://flag.smarttrot.com/v1/chat/completions',
     data: params,
     headers: {
       'Content-Type': 'application/json',
