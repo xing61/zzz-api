@@ -4,7 +4,7 @@ import time
 import json
 
 def chat_completions():
-    url="http://flag.smarttrot.com/index.php/api/v1/chat/completions"
+    url="https://flag.smarttrot.com/v1/chat/completions"
     api_secret_key = 'xxxxxxxxx';  # 你的api_secret_key
     headers = {'Content-Type': 'application/json', 'Accept':'application/json',
                'Authorization': "Bearer "+api_secret_key}
