@@ -8,7 +8,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
   apiKey: "您的访问码",
-  basePath: "http://flag.smarttrot.com/index.php/api/v1"
+  basePath: "https://flag.smarttrot.com/v1"
 });
 const openai = new OpenAIApi(configuration);
 
