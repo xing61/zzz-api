@@ -65,7 +65,7 @@ Authorization: Bearer $api_secret_key
 调用本接口，发起一次对话请求
 
 - **请求URL**
-> [v1/chat/completions](#)
+> `v1/chat/completions`
 
 - **请求方式** 
 >**POST**
@@ -140,7 +140,7 @@ Authorization: Bearer $api_secret_key
 ```
 curl -H "Content-Type: application/json" 
      -H "Authorization: Bearer $api_secret_key" 
-     -XPOST http://flag.smarttrot.com/index.php/api/v1/chat/completions -d '{
+     -XPOST https://flag.smarttrot.com/v1/chat/completions -d '{
   "messages": [
     {"role":"user","content":"请介绍一下你自己"},
     {"role":"assistant","content":"您好，我是智增增机器人。我能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感。"},
@@ -165,7 +165,7 @@ $params['user'] = '张三';
     $params['messages'] = $messages;
 }
 // 调用请求
-$cburl = 'http://flag.smarttrot.com/index.php/api/v1/chat/completions';
+$cburl = 'https://flag.smarttrot.com/v1/chat/completions';
 $chatgpt_resp = Tool::_request('post', $cburl, $params, $headers);
 $data = json_decode($chatgpt_resp, true);
 ```
@@ -175,7 +175,7 @@ import os
 import openai
 
 openai.api_key = "您的api_secret_key"
-openai.api_base = "http://flag.smarttrot.com/index.php/api/v1"
+openai.api_base = "https://flag.smarttrot.com/v1"
 
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
@@ -191,7 +191,7 @@ import time
 import json
 
 def chat_completions():
-    url="http://flag.smarttrot.com/index.php/api/v1/chat/completions"
+    url="https://flag.smarttrot.com/v1/chat/completions"
     api_secret_key = 'xxxxxxxxx';  # 你的api_secret_key
     headers = {'Content-Type': 'application/json', 'Accept':'application/json',
                'Authorization': "Bearer "+api_secret_key}
@@ -227,7 +227,7 @@ Given a prompt, the model will return one or more predicted completions, and can
 Creates a completion for the provided prompt and parameters.
 
 - **请求URL**
-> [v1/completions](#)
+> `v1/completions`
 
 - **请求方式** 
 >**POST**
@@ -331,7 +331,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 Given a prompt and/or an input image, the model will generate a new image. 
 
 - **请求URL**
-> [v1/images/generations](#)
+> `v1/images/generations`
 
 - **请求方式** 
 >**POST**
@@ -403,7 +403,7 @@ Related guide: Embeddings
 Creates an embedding vector representing the input text.
 
 - **请求URL**
-> [v1/embeddings](#)
+> `v1/embeddings`
 
 - **请求方式** 
 >**POST**
@@ -472,7 +472,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 Transcribes audio into the input language.   
 
 - **请求URL**
-> [v1/audio/transcriptions](#)
+> `v1/audio/transcriptions`
 
 - **请求方式** 
 >**POST**
@@ -518,7 +518,7 @@ transcript = openai.Audio.transcribe("whisper-1", audio_file)
 Translates audio into English.
 
 - **请求URL**
-> [v1/audio/translations](#)
+> `v1/audio/translations`
 
 - **请求方式** 
 >**POST**
@@ -566,7 +566,7 @@ Files are used to upload documents that can be used with features like fine-tuni
 Upload a file that contains document(s) to be used across various endpoints/features. Currently, the size of all the files uploaded by one organization can be up to 1 GB. Please contact us if you need to increase the storage limit.      
 
 - **请求URL**
-> [v1/files](#)
+> `v1/files`
 
 - **请求方式** 
 >**POST**
@@ -624,7 +624,7 @@ Creates a job that fine-tunes a specified model from a given dataset.
 Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.      
 
 - **请求URL**
-> [v1/fine_tuning/jobs](#)
+> `v1/fine_tuning/jobs`
 
 - **请求方式** 
 >**POST**
@@ -711,8 +711,7 @@ def credit_grants(query):
     url = BASE_URL+'/dashboard/billing/credit_grants'; # 余额查询url
     headers = {'Content-Type': 'application/json', 'Accept':'application/json',
                'Authorization': "Bearer "+api_secret_key}
-    params = {'session_id':'xxxxxxxxxx','query':query};
-    resp = requests.post(url, json.dumps(params), headers=headers)
+    resp = requests.post(url, headers=headers)
     resp = resp.json();
     json_str = json.dumps(resp, ensure_ascii=False)
     print(json_str)
