@@ -673,3 +673,62 @@ openai.FineTuningJob.create(training_file="file-abc123", model="gpt-3.5-turbo")
 }
 
 ```
+
+#### 7、账户相关     
+
+获取账户相关信息：余额等。    
+
+#### 7.1、查询余额       
+获取账户余额      
+
+- **请求URL**
+> [v1/dashboard/billing/credit_grants](#)
+
+- **请求方式** 
+>**POST**
+
+- **Header参数**
+>
+| 名称      |     值 | 
+| :-------- | :--------|
+| Content-Type| application/json| 
+| Authorization| Bearer $api_secret_key|  
+
+- **请求参数**
+>
+| 请求参数      |     参数类型 |   是否必须   |参数说明   |
+| :-------- | :--------| :------ | :------ |   
+
+
+- **请求示例**
+>    
+```
+BASE_URL = "https://flag.smarttrot.com/v1"
+
+# credit_grants
+def credit_grants(query):
+    api_secret_key = API_SECRET_KEY;  # 智增增的secret_key
+    url = BASE_URL+'/dashboard/billing/credit_grants'; # 余额查询url
+    headers = {'Content-Type': 'application/json', 'Accept':'application/json',
+               'Authorization': "Bearer "+api_secret_key}
+    params = {'session_id':'xxxxxxxxxx','query':query};
+    resp = requests.post(url, json.dumps(params), headers=headers)
+    resp = resp.json();
+    json_str = json.dumps(resp, ensure_ascii=False)
+    print(json_str)
+
+```
+
+- **返回示例**
+>    
+```
+{
+    "code": 0,
+    "msg": "ok",
+    "object": "credit_summary",
+    "grants": {
+        "available_amount": "111.8658"
+    }
+}
+
+```
