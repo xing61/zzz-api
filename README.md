@@ -682,7 +682,7 @@ openai.FineTuningJob.create(training_file="file-abc123", model="gpt-3.5-turbo")
 获取账户余额      
 
 - **请求URL**
-> [v1/dashboard/billing/credit_grants](#)
+> [`v1/dashboard/billing/credit_grants`](#)
 
 - **请求方式** 
 >**POST**
