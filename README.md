@@ -29,8 +29,7 @@ openai的国内代理，国内接口请求转发，api proxy
    智增增-大模型的API接口服务商   
    开发者单独的Secret Key、余额查询、示例代码等可以从管理后台中获取。        
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![api交流群2](https://github.com/xing61/xiaoyi-robot/assets/38256442/29cf8a04-1cae-4fb2-b5e5-1579613dca9b)
-
+![微信截图_20231021132523](https://github.com/xing61/xiaoyi-robot/assets/38256442/bb859bef-85f0-4451-9061-1a4d6a1b9083)
  
  
 - **注意事项**   
