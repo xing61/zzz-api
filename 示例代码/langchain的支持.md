@@ -33,3 +33,5 @@ if __name__ == '__main__':
 ```
 Lively Socks.
 ```
+可以从后台看到langchain是怎么调用智增增接口的：    
+![langchain使用量结果](https://github.com/xing61/xiaoyi-robot/assets/38256442/723bbab0-9fb9-49cb-b0b4-5c2d40bb4f37)
