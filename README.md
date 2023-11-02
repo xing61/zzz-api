@@ -29,7 +29,7 @@ openai的国内代理，国内接口请求转发，api proxy
    智增增-大模型的API接口服务商   
    开发者单独的Secret Key、余额查询、示例代码等可以从管理后台中获取。        
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![输入图片说明](https://flag.smarttrot.com/api_qunliao1.png?21312312)         
+![输入图片说明](https://flag.smarttrot.com/api_qunliao1.png)         
  
 - **注意事项**   
 注意事项！！ 
