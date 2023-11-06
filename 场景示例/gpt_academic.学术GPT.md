@@ -1,9 +1,10 @@
 ```
 最新针对这个学术gpt，我们部署了一个线上版本，并开放了源代码，可以参考这里：
 https://github.com/xing61/zzz_gpt_academic
-![微信截图_20231103233409](https://github.com/xing61/xiaoyi-robot/assets/38256442/eb2e1c7a-0982-4902-99e2-8b41fb8c44ee)
-
 ```
+![微信截图_20231103233409](https://github.com/xing61/xiaoyi-robot/assets/38256442/eb2e1c7a-0982-4902-99e2-8b41fb8c44ee)     
+
+
 当然如果是自己部署，也是可以的：
 通过简单配置即可支持学术GPT，只需要配置3处openai的三处地方：<br>
 修改config.py的以下三处：<br>
