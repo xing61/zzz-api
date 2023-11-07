@@ -13,7 +13,7 @@ openai的国内代理，国内接口请求转发，api proxy
   * 不限制使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
   * 无需代理即可访问，没有任何的阻拦。  
-  * 强大的接口能力，支持openai所有接口和模型：支持GPT-3.5，GPT-4，Embedding，Whisper，Fine-tuning，Image等    
+  * 强大的接口能力，支持openai所有接口和模型：支持GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等    
   * 最广泛的插件支持能力：Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT，ChatGPT-Next-Web等各类大模型插件。如果不想写代码，仅仅想在插件中使用，可以使用我们这个工具：https://github.com/xing61/chatgpt-plugin-key   
   * 兼容OpenAI接口格式，可以做到平替。   
   * 支持对Embeddings支持，可以用接口运行向量库、AutoGPT等应用。  
@@ -174,7 +174,7 @@ import os
 import openai
 
 openai.api_key = "您的api_secret_key"
-openai.api_base = "https://flag.smarttrot.com/v1"
+openai.base_url = "https://flag.smarttrot.com/v1"  # 要注意openai的版本号，目前最新的是base_url，旧版可能是api_base
 
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
