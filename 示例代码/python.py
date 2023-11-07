@@ -1,3 +1,33 @@
+使用openai的官方包：
+import os
+from openai import OpenAI
+import openai
+import requests
+import time
+import json
+import time
+
+API_SECRET_KEY = "xxxxxx";
+BASE_URL = "https://flag.smarttrot.com/v1/"
+# chat
+def chat_completions2(query):
+    openai.api_key = API_SECRET_KEY
+    openai.base_url = BASE_URL
+    resp = openai.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": query}
+        ]
+    )
+    print(resp)
+    print(resp.choices[0].message.content)
+
+if __name__ == '__main__':
+    chat_completions2("圆周率的前10位");
+
+
+使用http请求：
 import os
 import requests
 import time
@@ -15,3 +45,4 @@ def chat_completions():
 
 if __name__ == '__main__':
     chat_completions();
+
