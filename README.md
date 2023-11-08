@@ -2,7 +2,7 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。    
-智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4，gpt-3.5。          
+智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4-vision, gpt-4，gpt-3.5。          
 要买openai的账号？   
 要科学上网？  
 要美元的银行卡？  
@@ -80,7 +80,7 @@ Authorization: Bearer $api_secret_key
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
-| model| string| 否| 大模型的类别，目前支持：gpt-4-1106-preview，gpt-4-1106-vision-preview，gpt-3.5-turbo-1106，gpt-3.5-turbo-instruct，gpt-4, gpt-4-0314,  gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613。默认gpt-3.5-turbo|
+| model| string| 否| 大模型的类别，包括但不限于（基本所有官网的都支持，以官网为准，https://platform.openai.com/docs/models）：gpt-4-1106-preview，gpt-4-vision-preview，gpt-3.5-turbo-1106，gpt-3.5-turbo-instruct，gpt-4, gpt-4-0314,  gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613。默认gpt-3.5-turbo|
 | messages| List(message)| 是| 聊天上下文信息。说明:<br>（1）messages成员不能为空，1个成员表示单轮对话，多个成员表示多轮对话。<br>（2）最后一个message为当前请求的信息，前面的message为历史对话信息。<br>（3）必须为奇数个成员，成员中message的role必须依次为user、assistant。<br>（4）最后一个message的content长度（即此轮对话的问题）不能超过2000个字符；如果messages中content总长度大于2000字符，系统会依次遗忘最早的历史会话，直到content的总长度不超过2000个字符。  |
 | stream| bool| 否| 是否以流式接口的形式返回数据，默认false。|
 | user| string| 否| 表示最终用户的唯一标识符，可以监视和检测滥用行为，防止接口恶意调用。|
