@@ -2,10 +2,9 @@
 
 #### 说明
 1、接口请求规范完全和openai一样，可以直接以openai的接口文档为准：https://platform.openai.com/docs/api-reference/introduction  <br>
-2、支持几乎所有的openai的接口，没有列出的以官方接口为准
-3、智增增仅在外层增加两个字段：code，msg，用来表示当下接口的状态，code=0表示接口调用成功，非0表示失败，msg表明错误信息
-
-示例：
+2、支持几乎所有的openai的接口，没有列出的以官方接口为准<br>
+3、智增增仅在外层增加两个字段：code，msg，用来表示当下接口的状态，code=0表示接口调用成功，非0表示失败，msg表明错误信息 <br>
+示例：<br>
 ```
 {
   "code": 0,
@@ -19,6 +18,7 @@
     "total_tokens": 668
   }
 }
+```
 
 - **注意事项**   
 注意事项！！ 
@@ -36,8 +36,6 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 ```
 Content-Type: application/json
 Authorization: Bearer $api_secret_key
-```
-
 ```
 
 #### 1、创建chat
