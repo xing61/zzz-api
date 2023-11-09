@@ -57,5 +57,7 @@ Authorization: Bearer $api_secret_key
 
 
 ## API文档 ## 
-1、openai的API文档：https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3.md <br>
-2、智增增API接口文档：https://github.com/xing61/xiaoyi-robot/blob/main/%E6%99%BA%E5%A2%9E%E5%A2%9EAPI%E6%8E%A5%E5%8F%A3.md <br>
+1、openai的API文档：<br>
+https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3.md <br>
+2、智增增API接口文档：<br>
+https://github.com/xing61/xiaoyi-robot/blob/main/%E6%99%BA%E5%A2%9E%E5%A2%9EAPI%E6%8E%A5%E5%8F%A3.md <br>
