@@ -1,4 +1,4 @@
-# openai接口
+# openai接口说明
 
 #### 说明
 1、接口请求规范完全和openai一样，可以直接以openai的接口文档为准：https://platform.openai.com/docs/api-reference/introduction  <br>
