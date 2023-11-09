@@ -21,6 +21,6 @@ print(chat_completion.choices[0].message.content)
 Hello there! How can I assist you today ? 
 ```
 ============================================================================
-=============================================================================
-![官方库示例-智增增](https://github.com/xing61/xiaoyi-robot/assets/38256442/c704962b-c9e1-4fa3-9211-f90f5e3b7874)
+![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/3dd3b3bc-8140-4129-9944-4bbbb8bc5e0b)
+
 
