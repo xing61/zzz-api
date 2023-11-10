@@ -35,20 +35,19 @@ openai的国内代理，国内接口请求转发，api proxy
 - **注意事项**   
 1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从智增增管理后台获得。 
-请求头形如：  
-```
-Content-Type: application/json
-Authorization: Bearer $api_secret_key
-```
+   请求头形如：  
+   ```
+   Content-Type: application/json
+   Authorization: Bearer $api_secret_key
+   ```
 - **典型用法**    
-典型用法：<br>
 1、设置OPENAI_API_KEY环境变量为：智增增后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 2、设置OPENAI_API_BASE_URL环境变量为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 ![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/bfb8cbb5-c600-49eb-92eb-96c014ec3e37)
 
 
 ## API文档 ## 
-1、openai的API文档：<br>
+1、openai的API说明：<br>
 https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3.md <br>
-2、智增增API接口文档：<br>
+2、智增增API接口说明：<br>
 https://github.com/xing61/xiaoyi-robot/blob/main/%E6%99%BA%E5%A2%9E%E5%A2%9EAPI%E6%8E%A5%E5%8F%A3.md <br>
