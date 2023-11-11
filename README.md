@@ -2,11 +2,11 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。    
-智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持openai的API接口，支持：gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5。          
+智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持OpenAI的API接口，包括：gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5等。          
 要买openai的账号？   
 要科学上网？  
 要美元的银行卡？  
-通通不用的，直接调用就行，简单粗暴，关键稳定好用！！  
+通通不用的，直接调用就行，简单直接，关键稳定好用！！  
 openai的国内代理，国内接口请求转发，api proxy        
 
 - **项目主要优势**  
@@ -48,7 +48,7 @@ openai的国内代理，国内接口请求转发，api proxy
 
 
 ## 更详细的API说明 ## 
-1、[openai的API说明](https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md)<br>
+1、[OpenAI的API说明](https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md)<br>
 
 2、[智增增API接口说明](https://github.com/xing61/xiaoyi-robot/blob/main/%E6%99%BA%E5%A2%9E%E5%A2%9EAPI%E6%8E%A5%E5%8F%A3.md)<br>
 
