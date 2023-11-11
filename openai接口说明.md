@@ -68,7 +68,6 @@ Authorization: Bearer $api_secret_key
 >    
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |  
 | :-------- | :--------| :------ | :------ |  
-| api_secret_key| string| 否| 兼容老版接口，api_secret_key在header和此字段二者传其一即可。<br>注意：此字段将在后续版本中逐渐废弃
 | temperature| number| 否| What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.We generally recommend altering this or top_p but not both.，默认：1。|  
 | top_p| number| 否| An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered.We generally recommend altering this or temperature but not both.，默认：1。|  
 | n| number| 否| How many chat completion choices to generate for each input message. 默认:1。|  
