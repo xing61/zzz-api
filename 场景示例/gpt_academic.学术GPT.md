@@ -1,5 +1,6 @@
-最新针对这个学术gpt，我们部署了一个线上版本，并开放了源代码，可以参考这里：<br>
-https://github.com/xing61/zzz_gpt_academic<br>
+最新针对这个学术gpt，我们部署了一个线上版本，并开放了源代码：<br>
+[线上访问地址](http://gptac.zhizengzeng.com:51666/) <br>
+[Github地址](https://github.com/xing61/zzz_gpt_academic)<br>
 
 ![微信截图_20231103233409](https://github.com/xing61/xiaoyi-robot/assets/38256442/eb2e1c7a-0982-4902-99e2-8b41fb8c44ee)     
 
