@@ -46,7 +46,7 @@ openai的国内代理，国内接口请求转发，api proxy
 ![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/bfb8cbb5-c600-49eb-92eb-96c014ec3e37)
 
 
-## API文档 ## 
+## 更详细的API说明 ## 
 1、openai的API说明：<br>
 https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3.md <br>
 2、智增增API接口说明：<br>
