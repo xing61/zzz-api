@@ -1,3 +1,10 @@
+如果是python，注意openai包的版本要对，它升级了！！
+要注意，关键是base_url要设置成智增增的，如果这个不正确，其它肯定都不行。
+所以一定要注意他在不同的包中base_url的设置方式，
+目前已知的是：在老版本中的设置方式是：openai.api_base = BASE_URL，
+而在新版本中的设置方式是：client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)，
+别问为什么，问就是openai的锅      
+
 使用openai的官方包（新版）：
 import os
 from openai import OpenAI
