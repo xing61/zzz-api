@@ -23,11 +23,12 @@
 - **注意事项**   
 注意事项！！ 
 ``` 
-现在主要发现是有3个问题，  
+现在主要发现是有几个问题，  
 1、要加一个请求头，api接口文档中有说明：
-curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST https://flag.smarttrot.com/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
+curl -H "Content-Type: application/json" -H "Authorization: Bearer 你在智增增的key" -XPOST https://flag.smarttrot.com/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array
-3、api_secret_key传的不对，不能再传openai的key了，你要传你从智增增拿到的key（不需要有openai的key）       
+3、api_secret_key传的不对，不能再传openai的key了，你要传你从智增增拿到的key（不需要有openai的key）
+4、如果是python，注意openai包的版本要对，它升级了！！要注意，关键是base_url要设置成智增增的，如果这个不正确，其它肯定都不行。所以一定要注意他在不同的包中base_url的设置方式，目前已知的是：在老版本中的设置方式是：openai.api_base = BASE_URL，而在新版本中的设置方式是：client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)，别问为什么，问就是openai的锅      
 ```
 注：<br>
 1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
@@ -35,7 +36,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_k
 请求头形如：  
 ```
 Content-Type: application/json
-Authorization: Bearer $api_secret_key
+Authorization: Bearer 你在智增增的key  
 ```
 
 #### 1、创建chat
@@ -53,7 +54,7 @@ Authorization: Bearer $api_secret_key
 | 名称      |     值 | 参数说明   |
 | :-------- | :--------| :------ |
 | Content-Type| application/json| | 
-| Authorization| Bearer $api_secret_key| 开发者单独的api_secret_key，请从智增增管理后台获得。 | 
+| Authorization| Bearer 你在智增增的key| 开发者单独的api_secret_key，请从智增增管理后台获得。 | 
 
 - **请求参数**
 >
