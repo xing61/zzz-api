@@ -2,7 +2,7 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。    
-智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持OpenAI的API接口，包括：gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5等。          
+智增增-大模型的API接口服务商，提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5等。          
 要买openai的账号？   
 要科学上网？  
 要美元的银行卡？  
@@ -13,10 +13,11 @@ openai的国内代理，国内接口请求转发，api proxy
   * 不限制使用，可以用微信充值，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
   * 无需代理即可访问，没有任何的阻拦。  
-  * 强大的接口能力，支持openai所有接口和模型（包括11.7号最新更新的模型）：支持gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等    
+  * 强大的接口能力，支持openai所有接口和模型（包括11.7号最新更新的模型）：支持assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等    
   * 最广泛的插件支持能力：Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT，ChatGPT-Next-Web等各类大模型插件。如果不想写代码，仅仅想在插件中使用，也可以使用我们这个[插件工具](https://github.com/xing61/chatgpt-plugin-key)      
-  * 兼容OpenAI接口格式，可以做到平替。   
-  * 支持对Embeddings支持，可以用接口运行Langchain、向量库、AutoGPT等应用。  
+  * 兼容OpenAI接口格式，可以做到平替。
+  * 支持assistant api，可以创建自己的助手，详见示例
+  * 支持对Embeddings支持，可以用接口运行Langchain、向量库、AutoGPT等应用  
   * 支持对stream模式的支持，可以支持原生的各种应用   
   * 支持文字生成图片，支持最新的DALL-E-3   
   * 支持官方的Whisper模型，支持transcriptions和translations，可以做语音识别和翻译   
