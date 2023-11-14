@@ -39,7 +39,7 @@ openai的国内代理，国内接口请求转发，api proxy
    请求头形如：  
    ```
    Content-Type: application/json
-   Authorization: Bearer $API_KEY
+   Authorization: Bearer 你在智增增的key
    ```
 - **典型用法**    
 1、设置OPENAI_API_KEY环境变量为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
