@@ -43,8 +43,8 @@ openai的国内代理，国内接口请求转发，api proxy
    Authorization: Bearer 你在智增增的key
    ```
 - **典型用法1**    
-1、在python中，使用原生的openai的包，设置OPENAI_API_KEY为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、设置OPENAI_API_BASE_URL变量为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+1、在python中，使用原生的openai的包，设置api_key为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
+2、设置base_url为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 ![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/bfb8cbb5-c600-49eb-92eb-96c014ec3e37)
 - **典型用法2**    
 1、在langchain中，设置OPENAI_API_KEY环境变量为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
