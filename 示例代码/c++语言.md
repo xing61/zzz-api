@@ -13,7 +13,7 @@ size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
 int main() {
     CURL* curl;
     CURLcode res;
-    std::string apiKey = "你在小一获取的api-key";
+    std::string apiKey = "你在智增增获取的api-key";
     std::string urlString = "https://flag.smarttrot.com/v1/chat/completions";
     
     // Initialize the Curl library
