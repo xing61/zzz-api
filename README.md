@@ -31,7 +31,8 @@ openai的国内代理，国内接口请求转发，api proxy
    智增增-大模型的API接口服务商   
    开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。        
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![api_qunliao1](https://github.com/xing61/xiaoyi-robot/assets/38256442/a1a79d56-245b-4122-aca3-8ae809f98329)
+![api_qunliao1](https://github.com/xing61/xiaoyi-robot/assets/38256442/aa31f1b4-d6ac-4cd6-aeae-642690b66637)
+
  
 - **注意事项**   
 1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
