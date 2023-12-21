@@ -46,7 +46,7 @@ BASE_URL = "https://flag.smarttrot.com/v1/"
 def chat_completions2(query):
     openai.api_key = API_SECRET_KEY
     openai.api_base = BASE_URL
-    resp = openai.chat.completions.create(
+    resp = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
