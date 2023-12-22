@@ -1,8 +1,8 @@
-# 优质稳定的各类大模型的API接口-For企业和开发者
+# 优质稳定的OpenAI的API接口-For企业和开发者
 
 #### 介绍
-支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等     
-智增增-大模型的API接口服务商，为企业和开发者提供优质稳定的OpenAI相关的API调用接口。     
+为企业和开发者提供优质稳定的OpenAI相关的API调用接口。      
+智增增-大模型的API接口服务商， 支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等    
 提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5等。               
 要买openai的账号？   
 要科学上网？  
