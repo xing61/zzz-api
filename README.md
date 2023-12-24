@@ -1,8 +1,7 @@
 # 优质稳定的OpenAI的API接口-For企业和开发者
 
 #### 介绍
-为企业和开发者提供优质稳定的OpenAI相关的API调用接口。      
-智增增-大模型的API接口服务商， 支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等    
+为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
 提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4-1106，gpt-4-vision, gpt-4，gpt-3.5等。               
 要买openai的账号？   
 要科学上网？  
@@ -28,11 +27,10 @@
 
 - **项目地址**   
 1、项目官方网址：http://gpt.zhizengzeng.com/#/login   
-   智增增-大模型的API接口服务商   
+   智增增-大模型的API接口服务商，支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等   
    开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。        
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![api加入群聊二维码](https://github.com/xing61/xiaoyi-robot/assets/38256442/5f59eba8-fd36-4df2-a2a5-b4ecf0a73a9d)
-
+![api加入群聊二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/3c8b8d99-3197-446e-9f3f-b3bb12973cad)
  
 - **注意事项**   
 1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
