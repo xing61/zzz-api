@@ -3,7 +3,7 @@
 #### 说明
 1、接口请求规范完全和openai一样，应当直接以openai的接口文档为准：https://platform.openai.com/docs/api-reference/introduction  <br>
 （因为OpenAI接口也时常更新，建议直接以上面OpenAI的官方文档为准）<br>
-2、支持所有的openai的接口，以下部分没有列出的以官方接口为准<br>
+2、支持所有的openai的接口<br>
 3、智增增仅在外层增加两个字段：code，msg，用来表示当下接口的状态。code=0表示接口调用成功，非0表示失败，msg表明错误信息 <br>
 示例：<br>
 ```
