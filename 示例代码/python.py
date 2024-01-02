@@ -33,7 +33,6 @@ def chat_completions3(query):
 
 使用openai的官方包（旧版）：
 import os
-from openai import OpenAI
 import openai
 import requests
 import time
