@@ -31,7 +31,8 @@
    智增增-大模型的API接口服务商，支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等   
    开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。        
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![api加入群聊二维码-small](https://github.com/xing61/xiaoyi-robot/assets/38256442/7ecffe76-c686-4a7e-b43e-dd1628deda5a)
+![微信截图_20240110204135](https://github.com/xing61/xiaoyi-robot/assets/38256442/bff4db4d-9cf4-42d6-8422-a1177d2d0219)
+
 
  
 - **注意事项**   
