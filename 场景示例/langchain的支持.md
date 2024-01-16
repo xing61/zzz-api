@@ -22,7 +22,7 @@ os.environ["OPENAI_API_KEY"] = API_SECRET_KEY
 os.environ["OPENAI_API_BASE"] = BASE_URL
 
 def text():
-    llm = OpenAI(temperature=0.9)
+    llm = OpenAI(temperature=0.9,model='gpt-3.5-turbo-instruct')
     text = "What would be a good company name for a company that makes colorful socks?"
     print(llm(text))
 
