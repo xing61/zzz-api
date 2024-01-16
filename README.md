@@ -13,7 +13,8 @@
   * 不限制使用，可以用微信充值和对公付款等，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。 
   * 无需代理即可访问。  
-  * 强大的接口能力，支持openai所有接口和模型：支持assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等    
+  * 强大的接口能力，支持openai所有接口和模型：支持assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等
+  * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM等   
   * 最广泛的插件支持能力：Sidebar，沉浸式翻译，ChatHub，Chatbox，CodeGPT，ChatGPT-Next-Web等各类大模型插件。如果不想写代码，仅仅想在插件中使用，也可以使用我们这个[插件工具](https://github.com/xing61/chatgpt-plugin-key)      
   * 兼容OpenAI接口格式，可以做到平替。
   * 支持assistant api，可以创建自己的助手，详见示例
