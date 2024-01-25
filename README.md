@@ -31,8 +31,9 @@
 1、项目官方网址：http://gpt.zhizengzeng.com/#/login   
    智增增-大模型的API接口服务商，支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等   
    开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。        
-2、微信交流群（如果你也对本项目感兴趣，欢迎加入群聊参与讨论交流）：    
-![微信截图_20240110204135](https://github.com/xing61/xiaoyi-robot/assets/38256442/bff4db4d-9cf4-42d6-8422-a1177d2d0219)
+2、微信交流（如果你也对本项目感兴趣，欢迎交流）：    
+![xiaoyi客服1号-小](https://github.com/xing61/xiaoyi-robot/assets/38256442/9e0ec9ed-64d6-450b-91fe-a9d2cccc831a)
+
 
 
  
