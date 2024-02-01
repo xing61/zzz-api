@@ -2,11 +2,11 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
-提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4-1106，gpt-4-vision, Fine-tuning，gpt-3.5等。 <br>
+提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4，gpt-4-vision, Fine-tuning，gpt-3.5等。 <br>
 （同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等）<br>
 要买openai的账号？   
-要科学上网？  
-要美元的银行卡？  
+要科学上网？    
+要美元的银行卡？        
 通通不用的，直接调用就行，简单直接，关键稳定好用！！          
 
 - **项目主要优势**  
