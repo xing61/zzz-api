@@ -4,7 +4,7 @@
 1、接口请求规范完全和openai一样，应当直接以openai的接口文档为准：https://platform.openai.com/docs/api-reference/introduction  <br>
 （因为OpenAI接口也时常更新，建议直接以上面OpenAI的官方文档为准）<br>
 2、支持所有的openai的接口<br>
-3、智增增仅在外层增加两个字段：code，msg，用来表示当下接口的状态。code=0表示接口调用成功，非0表示失败，msg表明错误信息 <br>
+3、智增增仅在外层增加两个字段：code，msg，用来表示当下接口的状态。code=0表示接口调用成功，非0表示失败，msg表明错误信息（当然也可以不用管，直接以openai的返回为准） <br>
 示例：<br>
 ```
 {
@@ -40,6 +40,7 @@ Content-Type: application/json
 Authorization: Bearer 你在智增增的key  
 ```
 
+（详细API文档地址：http://doc.zhizengzeng.com）
 #### 示例接口1、创建chat
 
 调用本接口，发起一次对话请求
@@ -61,7 +62,7 @@ Authorization: Bearer 你在智增增的key
 >
 | 请求参数      |     参数类型 |   是否必须   |参数说明   |
 | :-------- | :--------| :------ | :------ |
-| model| string| 是| 大模型的类别，包括但不限于（基本所有官网的都支持，以官网为准 https://platform.openai.com/docs/models ）：gpt-4-1106-preview，gpt-4-vision-preview，gpt-3.5-turbo-1106，gpt-3.5-turbo-instruct，gpt-4, gpt-4-0314,  gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613。默认gpt-3.5-turbo-1106|
+| model| string| 是| 大模型的类别，包括但不限于（基本所有官网的都支持，以官网为准 https://platform.openai.com/docs/models ）：gpt-4-1106-preview，gpt-4-vision-preview，gpt-3.5-turbo-1106，gpt-3.5-turbo-instruct，gpt-4, gpt-4-0314,  gpt-4-0613, gpt-4-32k, gpt-4-32k-0613, gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613。所有模型列表（保持更新）：http://doc.zhizengzeng.com/doc-3979947|
 | messages| List(message)| 是| 聊天上下文信息。说明:<br>（1）messages成员不能为空，1个成员表示单轮对话，多个成员表示多轮对话。<br>（2）最后一个message为当前请求的信息，前面的message为历史对话信息。<br>（3）必须为奇数个成员，成员中message的role必须依次为user、assistant。<br>  |
 | stream| bool| 否| 是否以流式接口的形式返回数据，默认false。|
 | user| string| 否| 表示最终用户的唯一标识符，可以监视和检测滥用行为，防止接口恶意调用。|
