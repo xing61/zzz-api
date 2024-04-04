@@ -28,7 +28,7 @@ def chat_completions3(query):
         ]
     )
     print(resp)
-    print(resp.choices[0].message.content)
+    #print(resp.choices[0].message.content)
 
 
 使用openai的官方包（旧版）：
@@ -53,7 +53,7 @@ def chat_completions2(query):
         ]
     )
     print(resp)
-    print(resp.choices[0].message.content)
+    #print(resp.choices[0].message.content)
 
 if __name__ == '__main__':
     chat_completions2("圆周率的前10位");
@@ -73,7 +73,8 @@ def chat_completions():
     params = {'user':'张三',
               'messages':[{'role':'user', 'content':'1+100='}]};
     r = requests.post(url, json.dumps(params), headers=headers)
-    print(r.json())
+    print(r)
+    #print(r.json())
 
 if __name__ == '__main__':
     chat_completions();
