@@ -4,15 +4,13 @@
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
 提供ChatGPT的API调用，支持OpenAI的API接口，包括：assistant，gpt-4，gpt-4-vision, Fine-tuning，gpt-3.5等。 <br>
 （同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等， 标准的OpenAI的接口格式访问所有的大模型）<br>
-要买openai的账号？   
-要科学上网？    
+要买openai的账号？      
 要美元的银行卡？        
 通通不用的，直接调用就行，简单直接，关键稳定好用！！          
 
 - **项目主要优势**  
   * 不限制使用，可以用微信充值和对公付款等，没有封号风险。
-  * 不用买openai的账号，不用美元的银行卡。 
-  * 无需代理即可访问。  
+  * 不用买openai的账号，不用美元的银行卡。  
   * 强大的接口能力，支持openai所有接口和模型：支持assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等
   * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM等，标准的OpenAI的接口格式访问所有的大模型      
   * 最广泛的插件支持能力:ChatGPT-Next-Web,LobeChat,GPT学术(GPT Academic),Chatbox,CodeGPT等各类大模型插件。如果不写代码，仅仅想在插件中使用，也可以使用我们这个[插件工具](https://github.com/xing61/chatgpt-plugin-key)      
