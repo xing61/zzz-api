@@ -60,10 +60,7 @@ def run(assistant_id, thread_id):
 
 - **检查是否run完成**     
 
-要注意的是：<br>
-上一步提交完run任务之后，会话是需要一段时间来执行的。<br>
-也就是说助手是否执行完成，是需要有一个判断的<br>
-这里通过返回数据的：status=completed来进行判断<br>
+
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
 BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
