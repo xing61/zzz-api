@@ -44,7 +44,7 @@
    ```
    Content-Type: application/json
    Authorization: Bearer 你在智增增的key
-   ```    
+   ```
 3、注意不要涉及黄色、暴力、政治等敏感话题！互联网非法外之地，请注意言辞。一旦发现，账号将被永久封禁。      
 
 - **典型用法1**    
