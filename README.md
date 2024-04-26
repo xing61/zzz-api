@@ -44,7 +44,9 @@
    ```
    Content-Type: application/json
    Authorization: Bearer 你在智增增的key
-   ```
+   ```    
+3、注意不要涉及黄色、暴力、政治等敏感话题！互联网非法外之地，请注意言辞。一旦发现，账号将被永久封禁。      
+
 - **典型用法1**    
 1、在python中，使用官方的openai的包，设置api_key为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
 2、设置base_url为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
