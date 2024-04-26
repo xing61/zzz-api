@@ -1,7 +1,7 @@
-# 优质稳定的OpenAI的API接口-For企业和开发者
+# 优质稳定的OpenAI的API接口-For企业用户
 
 #### 介绍
-为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
+为企业提供优质稳定的OpenAI相关的API调用接口。          
 支持OpenAI的API接口，包括：assistant，gpt-4，gpt-4-vision, Fine-tuning，gpt-3.5等。 <br>
 （同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等， 标准的OpenAI的接口格式访问所有的大模型）<br>
 要买openai的账号？      
