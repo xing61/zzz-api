@@ -28,6 +28,7 @@ print(response)
 ```
 或者直接将下面代码中的key和url换成我们智增增的即可：    
 key是你在智增增后台拿到的密钥    
-url是：`https://flag.smarttrot.com/v1/chat/completions`     
+url是：`https://flag.smarttrot.com/v1/chat/completions` 
+
 ![0cca24fd-30c6-4dc1-b212-3c8a03a9f9a0](https://github.com/xing61/xiaoyi-robot/assets/38256442/9f20101d-cdf3-438e-ab3f-bc2d20e8766c)
 
