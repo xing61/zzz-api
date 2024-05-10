@@ -1,7 +1,10 @@
 ```
 from openai import OpenAI
 
-client = OpenAI()
+API_SECRET_KEY = "xxxxxx";
+BASE_URL = "https://flag.smarttrot.com/v1/"
+
+client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
 
 response = client.chat.completions.create(
     model="gpt-4-vision-preview",
