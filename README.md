@@ -11,11 +11,12 @@
 - **项目主要优势**  
   * 不限制使用，可以用微信充值和对公付款等，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。  
-  * 强大的接口能力，支持openai所有接口和模型：支持assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等
+  * 强大的接口能力，支持openai所有接口和模型：支持batch，assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等
   * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM等，标准的OpenAI的接口格式访问所有的大模型      
   * 支持企业定制和内部本地部署，可以联系我们：【[点这里](https://github.com/xing61/xiaoyi-robot/assets/38256442/9e9156ad-1dc3-4dd4-bf1a-a200849ff4ac)
 】
   * 兼容OpenAI接口格式，可以做到平替。
+  * 支持Batch，详见示例
   * 支持assistant api，可以创建自己的助手，详见示例
   * 支持fine-tune（微调），可以使用自己的数据来微调GPT的模型，详见示例
   * 支持对Embeddings支持，可以用接口运行Langchain、向量库、AutoGPT等应用  
