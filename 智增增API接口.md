@@ -8,12 +8,12 @@
 ``` 
 现在主要发现是有3个问题，  
 1、要加一个请求头，api接口文档中有说明：
-curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST https://flag.smarttrot.com/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
+curl -H "Content-Type: application/json" -H "Authorization: Bearer $api_secret_key" -XPOST https://api.zhizengzeng.com/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array
 3、api_secret_key传的不对，不能再传openai的key了，你要传你从智增增拿到的key（不需要有openai的key）       
 ```
 注：<br>
-1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
+1、以下所有接口的base_url: `https://api.zhizengzeng.com/` （支持https）<br>
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从智增增管理后台获得。 
 请求头形如：  
 ```
@@ -50,7 +50,7 @@ Authorization: Bearer $api_secret_key
 - **请求示例**
 >    
 ```
-BASE_URL = "https://flag.smarttrot.com/v1"
+BASE_URL = "https://api.zhizengzeng.com/v1"
 
 # credit_grants
 def credit_grants(query):
