@@ -38,7 +38,7 @@
 
  
 - **注意事项**   
-1、以下所有接口的base_url: `https://flag.smarttrot.com/` （支持https）<br>
+1、以下所有接口的base_url: `https://api.zhizengzeng.com/` （支持https，兼容旧base_url:`https://flag.smarttrot.com/`）<br>
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的API_KEY，用于认证。 开发者单独的API_KEY，请从智增增管理后台获得。 
    请求头形如：  
    ```
@@ -49,15 +49,15 @@
 
 - **典型用法1**    
 1、在python中，使用官方的openai的包，设置api_key为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、设置base_url为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+2、设置base_url为：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 ![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/bfb8cbb5-c600-49eb-92eb-96c014ec3e37)
 - **典型用法2**    
 1、在langchain中，设置OPENAI_API_KEY环境变量为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、设置OPENAI_API_BASE_URL环境变量为：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+2、设置OPENAI_API_BASE_URL环境变量为：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 ![微信截图_20231119113128](https://github.com/xing61/xiaoyi-robot/assets/38256442/ce744bb8-a49d-4230-a07d-38235441b96a)
 - **典型用法3**    
 1、在任何语言中，直接发送http请求，请求头中指定key：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、请求的url同官方格式，只需要将base_url：`https://flag.smarttrot.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+2、请求的url同官方格式，只需要将base_url：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 ![微信截图_20231121104939](https://github.com/xing61/xiaoyi-robot/assets/38256442/b57cc6bc-8f76-44bb-965e-3cc99be9f3fa)
 
 
