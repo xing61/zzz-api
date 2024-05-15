@@ -15,7 +15,7 @@ import json
 import time
 
 API_SECRET_KEY = "xxxxxx";
-BASE_URL = "https://flag.smarttrot.com/v1/"
+BASE_URL = "https://api.zhizengzeng.com/v1/"
 
 # chat
 def chat_completions3(query):
@@ -40,7 +40,7 @@ import json
 import time
 
 API_SECRET_KEY = "xxxxxx";
-BASE_URL = "https://flag.smarttrot.com/v1/"
+BASE_URL = "https://api.zhizengzeng.com/v1/"
 # chat
 def chat_completions2(query):
     openai.api_key = API_SECRET_KEY
@@ -66,7 +66,7 @@ import time
 import json
 
 def chat_completions():
-    url="https://flag.smarttrot.com/v1/chat/completions"
+    url="https://api.zhizengzeng.com/v1/chat/completions"
     api_secret_key = 'xxxxxxxxx';  # 你的api_secret_key
     headers = {'Content-Type': 'application/json', 'Accept':'application/json',
                'Authorization': "Bearer "+api_secret_key}
