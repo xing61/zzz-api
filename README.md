@@ -2,7 +2,7 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
-支持OpenAI的API接口，包括：assistant，gpt-4，gpt-4-vision, Fine-tuning，gpt-3.5等。 <br>
+支持OpenAI的API接口，包括：assistant，gpt-4，gpt-4-vision, Fine-tuning，gpt-4o等。 <br>
 （同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等， 标准的OpenAI的接口格式访问所有的大模型）<br>
 要买openai的账号？      
 要美元的银行卡？        
@@ -11,7 +11,7 @@
 - **项目主要优势**  
   * 不限制使用，可以用微信充值和对公付款等，没有封号风险。
   * 不用买openai的账号，不用美元的银行卡。  
-  * 强大的接口能力，支持openai所有接口和模型：支持batch，assistant，gpt-4-1106，gpt-4-vision，GPT-3.5，GPT-4，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3, Image等
+  * 强大的接口能力，支持openai所有接口和模型：支持batch，assistant，gpt-4o，gpt-4-vision，GPT-3.5，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3等
   * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM、DeepSeek等，标准的OpenAI的接口格式访问所有的大模型      
   * 支持企业定制和内部本地部署，可以联系我们：【[点这里](https://github.com/xing61/xiaoyi-robot/assets/38256442/9e9156ad-1dc3-4dd4-bf1a-a200849ff4ac)
 】
