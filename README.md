@@ -38,7 +38,7 @@
 
  
 - **注意事项**   
-1、以下所有接口的base_url: `https://api.zhizengzeng.com/` （支持https，兼容旧base_url:`https://flag.smarttrot.com/`）<br>
+1、以下所有接口的base_url: `https://api.zhizengzeng.com/` （支持https）<br>
 2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的API_KEY，用于认证。 开发者单独的API_KEY，请从智增增管理后台获得。 
    请求头形如：  
    ```
