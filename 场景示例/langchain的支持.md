@@ -16,7 +16,7 @@ import time
 from langchain.llms import OpenAI
 
 API_SECRET_KEY = "你在智增增的key";
-BASE_URL = "https://flag.smarttrot.com/v1"; #智增增的base-url
+BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base-url
 
 os.environ["OPENAI_API_KEY"] = API_SECRET_KEY
 os.environ["OPENAI_API_BASE"] = BASE_URL
