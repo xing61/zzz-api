@@ -3,7 +3,7 @@
 - **创建一个assistant**
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # assistant
 def create_assistant():
@@ -19,7 +19,7 @@ def create_assistant():
 - **创建一个thread(会话)**
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # thread
 def create_thread():
@@ -30,7 +30,7 @@ def create_thread():
 - **add a message**
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 def add_message(thread_id):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
@@ -45,7 +45,7 @@ def add_message(thread_id):
 - **run这个助手**
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # run a assistant
 def run(assistant_id, thread_id):
@@ -63,7 +63,7 @@ def run(assistant_id, thread_id):
 
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # retrieve,检查执行状态
 def retrieve(thread_id, run_id):
@@ -79,7 +79,7 @@ def retrieve(thread_id, run_id):
 
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # 获取助手的回答
 # Once the Run completes, you can retrieve the Messages added by the Assistant to the Thread.
