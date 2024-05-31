@@ -8,7 +8,7 @@ import os
 import openai
 
 openai.api_key = "您在智增增的api_secret_key"
-openai.api_base = "https://flag.smarttrot.com/v1/"  #智增增的base_url，注意加上最后的/
+openai.api_base = "https://api.zhizengzeng.com/v1/"  #智增增的base_url，注意加上最后的/
 
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
