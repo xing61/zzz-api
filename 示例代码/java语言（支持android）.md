@@ -12,7 +12,7 @@ public class ChatDemo
 {
     public static void main(String[] args) throws Exception
     {
-        String url = "https://flag.smarttrot.com/v1/chat/completions";
+        String url = "https://api.zhizengzeng.com/v1/chat/completions";
         String key = "你在智增增获取的API_SECRET_KEY";
         GPTConnectorServer(url, key);
     }
