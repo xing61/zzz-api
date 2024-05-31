@@ -16,7 +16,7 @@ from langchain.llms import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 
 API_SECRET_KEY = "你的智增增的key";
-BASE_URL = "https://flag.smarttrot.com/v1"; #智增增的base-url
+BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base-url
 
 os.environ["OPENAI_API_KEY"] = API_SECRET_KEY
 os.environ["OPENAI_API_BASE"] = BASE_URL
