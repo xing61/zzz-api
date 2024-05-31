@@ -7,8 +7,8 @@ npm install openai
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "您的访问码",
-  basePath: "https://flag.smarttrot.com/v1"
+  apiKey: "您的智增增key",
+  basePath: "https://api.zhizengzeng.com/v1"
 });
 const openai = new OpenAIApi(configuration);
 
