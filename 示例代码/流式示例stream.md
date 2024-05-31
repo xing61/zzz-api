@@ -8,7 +8,7 @@ import json
 import time
 
 API_SECRET_KEY = "xxxxx";  # 你在智增增的key
-BASE_URL = "https://flag.smarttrot.com/v1"
+BASE_URL = "https://api.zhizengzeng.com/v1"
 
 def stream_chat(prompt: str):
     openai.api_key = API_SECRET_KEY
