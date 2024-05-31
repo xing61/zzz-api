@@ -3,5 +3,5 @@
 
 1、设置OPENAI_API_KEY环境变量为：智增增增后台获取的api_secret_key，替换官方的API_KEY: sk-****** <br>
 
-2、设置OPENAI_API_BASE_URL环境变量为：`https://flag.smarttrot.com/v1`，替换官方的域名: `https://api.openai.com/v1` <br>
+2、设置OPENAI_API_BASE_URL环境变量为：`https://api.zhizengzeng.com/v1`，替换官方的域名: `https://api.openai.com/v1` <br>
 
