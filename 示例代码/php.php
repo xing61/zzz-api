@@ -13,7 +13,7 @@ $params['user'] = '张三';
     $params['messages'] = $messages;
 }
 // 调用请求
-$cburl = 'https://flag.smarttrot.com/v1/chat/completions';
+$cburl = 'https://api.zhizengzeng.com/v1/chat/completions';
 $chatgpt_resp = Tool::_request('post', $cburl, $params, $headers);
 $data = json_decode($chatgpt_resp, true);
 
