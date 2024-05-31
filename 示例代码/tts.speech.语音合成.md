@@ -12,7 +12,7 @@ import json
 import time
 
 API_SECRET_KEY = "xxxx"; #智增增的key
-BASE_URL = "https://flag.smarttrot.com/v1/"; #智增增的base_url
+BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 
 # speech
 def tts(query):
