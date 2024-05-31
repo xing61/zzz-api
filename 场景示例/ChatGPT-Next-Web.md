@@ -2,7 +2,7 @@
 
 配置两步解决：<br>
 1、OpenAI的api key填写你在智增增后台手机号注册拿到的key <br>
-2、openai的base_url填写这个：`https://flag.smarttrot.com/` <br>
+2、openai的base_url填写这个：`https://api.zhizengzeng.com/` <br>
 
 如下图所示： <br>
 ![chatgpt-next-web](https://github.com/xing61/chatgpt-plugin-key/assets/38256442/3ff7f384-641c-460a-9dc3-21f49265c411) <br>
