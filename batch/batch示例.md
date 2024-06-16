@@ -45,7 +45,7 @@ def retrieve(bid):
 ```
 - **获取batch结果**
 
-在上个返回batch的状态信息中，会有一个结果文件，然后通过下载这个文件来获取结果
+
 
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
