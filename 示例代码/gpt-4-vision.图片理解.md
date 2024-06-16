@@ -1,3 +1,4 @@
+1、使用图片url
 ```
 from openai import OpenAI
 
@@ -28,7 +29,8 @@ response = client.chat.completions.create(
 print(response)
 #print(response.choices[0])
 ```
-或者直接将下面代码中的key和url换成我们智增增的即可：    
+2、使用图片base64
+直接将下面代码中的key和url换成我们智增增的即可：  
 key是你在智增增后台拿到的密钥    
 url是：`https://api.zhizengzeng.com/v1/chat/completions` 
 
