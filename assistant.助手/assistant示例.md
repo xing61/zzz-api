@@ -51,12 +51,14 @@ BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
 # run a assistant
 def run(assistant_id, thread_id):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
-    run = client.beta.threads.runs.create(
+    stream = client.beta.threads.runs.create(
         thread_id=thread_id,  # 助手的会话id要从上一步获取得到
         assistant_id=assistant_id, # 助手的id要从上一步获取得到
-        instructions="Please address the user as Jane Doe. The user has a premium account."
+        instructions="Please address the user as Jane Doe. The user has a premium account.",
+stream=True
     )
-    print(run)
+for event in stream:
+  print(event)
 ```
 
 
