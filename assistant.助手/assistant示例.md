@@ -42,7 +42,7 @@ def add_message(thread_id):
     print(message)
 ```
 
-- **run这个助手**
+- **run这个助手**     
 新版assistant支持传递参数stream=true，流式直接返回结果
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
@@ -60,6 +60,6 @@ def run(assistant_id, thread_id):
 ```
 
 
-恭喜，助手搭建告成！！<br>
+助手搭建告成！！<br>
 你就用指定模型和工具建立了一个自己的助手了<br>
 
