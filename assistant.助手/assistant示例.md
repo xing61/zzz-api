@@ -43,6 +43,7 @@ def add_message(thread_id):
 ```
 
 - **run这个助手**
+新版assistant支持传递参数stream=true，流式直接返回结果
 ```
 API_SECRET_KEY = "你的智增增获取的api_key";
 BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
@@ -58,38 +59,7 @@ def run(assistant_id, thread_id):
     print(run)
 ```
 
-- **检查是否run完成**     
 
-
-```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
-
-# retrieve,检查执行状态
-def retrieve(thread_id, run_id):
-    print("retrieve");
-    client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
-    run = client.beta.threads.runs.retrieve(
-        thread_id=thread_id, # 助手的会话id要从上一步获取得到
-        run_id=run_id  # 助手的run id要从上一步获取得到
-    )
-    print(run)
-```
-- **获取助手的回答**
-
-```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1/"; #智增增的base_url
-
-# 获取助手的回答
-# Once the Run completes, you can retrieve the Messages added by the Assistant to the Thread.
-def list_messages(thread_id):
-    client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
-    messages = client.beta.threads.messages.list(
-        thread_id=thread_id  # 助手的会话id要从上一步获取得到
-    )
-    print(messages)
-```
 恭喜，助手搭建告成！！<br>
 你就用指定模型和工具建立了一个自己的助手了<br>
 
