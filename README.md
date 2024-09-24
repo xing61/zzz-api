@@ -2,7 +2,7 @@
 
 #### 介绍
 为企业和开发者提供优质稳定的OpenAI相关的API调用接口。          
-支持OpenAI的API接口，包括：batch，assistant, Fine-tuning，gpt-4o，gpt-4-vision，gpt-4等。 <br>
+支持OpenAI的API接口，包括：batch，assistant, Fine-tuning，o1-preview，o1-mini，gpt-4o，gpt-4-vision，gpt-4等。 <br>
 （同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等， 标准的OpenAI的接口格式访问所有的大模型）<br>
 要买openai的账号？      
 要美元的银行卡？        
