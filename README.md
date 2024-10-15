@@ -13,8 +13,6 @@
   * 不用买openai的账号，不用美元的银行卡。  
   * 强大的接口能力，支持openai所有接口和模型：支持batch，assistant，gpt-4o，gpt-4-vision，GPT-3.5，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3等
   * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM、DeepSeek等，标准的OpenAI的接口格式访问所有的大模型      
-  * 支持企业定制和内部本地部署，可以联系我们：【[点这里](https://github.com/xing61/xiaoyi-robot/assets/38256442/9e9156ad-1dc3-4dd4-bf1a-a200849ff4ac)
-】
   * 兼容OpenAI接口格式，可以做到平替。
   * 支持Batch，详见示例
   * 支持assistant api，可以创建自己的助手，详见示例
