@@ -3,16 +3,16 @@
 #### 介绍
 为企业和开发者提供优质稳定的各类大模型的API接口。支持OpenAI等多种接口格式访问大模型          
 支持OpenAI的API接口，包括：batch，assistant, Fine-tuning，o1-preview，o1-mini，gpt-4o，gpt-4-vision，gpt-4等。 <br>
-（同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等， 标准的OpenAI的接口格式访问所有的大模型）<br>
+（同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等）<br>
 要买openai、Gemini、Claude等的账号？      
 要美元的银行卡？        
 通通不用的，直接调用就行，简单直接，关键稳定好用！！          
 
 - **项目主要优势**  
   * 不限制使用，可以用微信充值和对公付款等，没有封号风险。
-  * 不用买openai的账号，不用美元的银行卡。  
+  * 不用买openai等的账号，不用美元的银行卡。  
   * 强大的接口能力，支持openai所有接口和模型：支持batch，assistant，gpt-4o，gpt-4-vision，GPT-3.5，Embedding，Whisper，TTS, Fine-tuning，DALL-E-3等
-  * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM、DeepSeek等，标准的OpenAI的接口格式访问所有的大模型      
+  * 同时支持google gemini、claude、百度文心一言、阿里、讯飞星火、ChatGLM、DeepSeek等      
   * 兼容OpenAI接口格式，可以做到平替。
   * 支持Batch，详见示例
   * 支持assistant api，可以创建自己的助手，详见示例
