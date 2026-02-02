@@ -1,7 +1,7 @@
-# 优质稳定的OpenAI、Gemini、Claude等的API接口-For企业和开发者
+# 企业级稳定的OpenAI、Claude等的API接口-For企业和开发者
 
 #### 介绍
-智增增API - 为企业和开发者提供优质稳定的各类大模型的API接口。支持OpenAI, Google, Anthropic等多种接口格式访问大模型          
+智增增API - 为企业和开发者提供优质稳定的各类大模型的API接口。支持OpenAI, Anthropic等多种接口格式访问大模型          
 支持OpenAI的API接口，包括：video, batch，assistant, Fine-tuning，o1-preview，o1-mini，gpt-4o，gpt-4, gpt5, sora-2等。 <br>
 （同时支持google gemini、claude、xai, meta, 百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等）<br>
 支持Anthropic claude的官方接口形式<br>
