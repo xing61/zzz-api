@@ -62,9 +62,3 @@ Ztoken Pro - Same Models. Better Economics.
 2、请求的url同官方格式，只需要将base_url：`https://api.ztoken.pro/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
 
 
-
-## 更详细的API说明 ## 
-1、[OpenAI的API说明](https://github.com/xing61/xiaoyi-robot/blob/main/openai%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md)<br>
-
-2、[ztoken API接口说明](https://github.com/xing61/xiaoyi-robot/blob/main/%E6%99%BA%E5%A2%9E%E5%A2%9EAPI%E6%8E%A5%E5%8F%A3.md)<br>
-
