@@ -1,9 +1,9 @@
 
 
-- **上传batch数据**
+- **upload batch data**
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "ztoken-api-key";
+BASE_URL = "https://api.ztoken.pro/v1"; 
 
 # files
 def files():
@@ -15,10 +15,10 @@ def files():
     print(resp)
     return resp.id
 ```
-- **创建batch**
+- **create batch**
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "ztoken-api-key";
+BASE_URL = "https://api.ztoken.pro/v1"; 
 
 def batches(file_id):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
@@ -28,14 +28,11 @@ def batches(file_id):
     print(resp)
     return resp.id
 ```
-- **检查batch是否完成**     
-
-要注意的是：<br>
-上一步提交完batch任务之后，是需要一段时间来执行结果的，时长取决于你的数据量大小、当下任务数、openai的算力是否充足等等。<br>
+- **check batch finished or not**     
 
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "ztoken-api-key";
+BASE_URL = "https://api.ztoken.pro/v1"; 
 
 def retrieve(bid):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
@@ -43,13 +40,13 @@ def retrieve(bid):
     print(resp)
     return resp.id
 ```
-- **获取batch结果**
+- **get batch result**
 
 
 
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "ztoken-api-key";
+BASE_URL = "https://api.ztoken.pro/v1"; 
 
 def get_result(fid):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
