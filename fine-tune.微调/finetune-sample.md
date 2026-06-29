@@ -1,15 +1,13 @@
 如果是python，注意openai包的版本要对，它升级了！！ <br>
-要注意，关键是base_url要设置成智增增的，如果这个不正确，其它肯定都不行。 <br>
+要注意，关键是base_url要设置成ztoken的，如果这个不正确，其它肯定都不行。 <br>
 所以一定要注意他在不同的包中base_url的设置方式， <br>
 目前已知的是：在老版本中的设置方式是：openai.api_base = BASE_URL， <br>
 而在新版本中的设置方式是：client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)， <br>
-别问为什么，问就是openai的锅    <br>
-新版本的代码需要参考接口文档做相应的修改：http://doc.zhizengzeng.com/doc-3989041
 
 - **准备训练数据**
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "你的ztoken获取的api_key";
+BASE_URL = "https://api.ztoken.pro/v1"; #ztoken的base_url
 
 # files
 def files():
@@ -23,8 +21,8 @@ def files():
 ```
 - **上传训练数据**
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "你的ztoken获取的api_key";
+BASE_URL = "https://api.ztoken.pro/v1"; #ztoken的base_url
 
 # jobs
 def jobs(file_id):
@@ -39,8 +37,8 @@ def jobs(file_id):
 上一步提交完训练任务之后，模型是需要一段时间来训练的，训练的时长取决于你的数据量大小、当下训练的任务数、openai的算力是否充足等等。<br>
 
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "你的ztoken获取的api_key";
+BASE_URL = "https://api.ztoken.pro/v1"; #ztoken的base_url
 
 # retrieve
 def retrieve(ftid):
@@ -54,8 +52,8 @@ def retrieve(ftid):
 
 
 ```
-API_SECRET_KEY = "你的智增增获取的api_key";
-BASE_URL = "https://api.zhizengzeng.com/v1"; #智增增的base_url
+API_SECRET_KEY = "你的ztoken获取的api_key";
+BASE_URL = "https://api.ztoken.pro/v1"; #ztoken的base_url
 
 # chat
 def chat_completions(query):
