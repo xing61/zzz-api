@@ -23,21 +23,21 @@
 ``` 
 现在主要发现是有几个问题，  
 1、要加一个请求头，api接口文档中有说明：
-curl -H "Content-Type: application/json" -H "Authorization: Bearer 你在ztoken的key" -XPOST https://api.ztoken.pro/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
+curl -H "Content-Type: application/json" -H "Authorization: Bearer 你在zzz的api_key" -XPOST https://api.zhizengzeng.com/v1/chat/completions -d '{"messages": [{"role":"user","content":"请介绍一下你自己"}]}'  | iconv -f utf-8 -t utf-8  
 2、messages传的不对，messages是array
-3、api_secret_key传的不对，不能再传openai的key了，你要传你从ztoken拿到的key（不需要有openai的key）
-4、如果是python，注意openai包的版本要对，它升级了！！要注意，关键是base_url要设置成ztoken的，如果这个不正确，其它肯定都不行。所以一定要注意他在不同的包中base_url的设置方式，目前已知的是：在老版本中的设置方式是：openai.api_base = BASE_URL，而在新版本中的设置方式是：client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)，别问为什么，问就是openai的锅      
+3、api_key传的不对，不能再传openai的key了，你要传你从zzz拿到的key（不需要有openai的key）
+4、如果是python，注意openai包的版本要对，它升级了！！要注意，关键是base_url要设置成zzz的，如果这个不正确，其它肯定都不行。所以一定要注意他在不同的包中base_url的设置方式，目前已知的是：在老版本中的设置方式是：openai.api_base = BASE_URL，而在新版本中的设置方式是：client = OpenAI(api_key=API_KEY, base_url=BASE_URL)，别问为什么，问就是openai的锅      
 ```
 注：<br>
-1、以下所有接口的base_url: `https://api.ztoken.pro` <br>
-2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_secret_key，请从ztoken管理后台获得。 
+1、以下所有接口的base_url: `https://api.zhizengzeng.com` <br>
+2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的api_secret_key，用于认证。 开发者单独的api_key，请从zzz管理后台获得。 
 请求头形如：  
 ```
 Content-Type: application/json
-Authorization: Bearer 你在ztoken的key  
+Authorization: Bearer 你在zzz的key  
 ```
 
-（更详细API文档地址：http://doc.ztoken.pro）
+（更详细API文档地址：http://doc.zhizengzeng.com）
 #### 示例接口1、创建chat
 
 调用本接口，发起一次对话请求
@@ -53,7 +53,7 @@ Authorization: Bearer 你在ztoken的key
 | 名称      |     值 | 参数说明   |
 | :-------- | :--------| :------ |
 | Content-Type| application/json| | 
-| Authorization| Bearer 你在ztoken的key| 开发者单独的api_secret_key，请从ztoken管理后台获得。 | 
+| Authorization| Bearer 你在zzz的key| 开发者单独的api_key，请从zzz管理后台获得。 | 
 
 - **请求参数**
 >
@@ -117,7 +117,7 @@ Authorization: Bearer 你在ztoken的key
 ```
 curl -H "Content-Type: application/json" 
      -H "Authorization: Bearer $api_secret_key" 
-     -XPOST https://api.ztoken.pro/v1/chat/completions -d '{
+     -XPOST https://api.zhizengzeng.com/v1/chat/completions -d '{
   "messages": [
     {"role":"user","content":"请介绍一下你自己"},
     {"role":"assistant","content":"您好，我是ztoken机器人。我能够与人对话互动，回答问题，协助创作，高效便捷地帮助人们获取信息、知识和灵感。"},
@@ -128,10 +128,10 @@ curl -H "Content-Type: application/json"
 ```
 php示例代码：  
 // 设置请求头
-$api_secret_key = 'xxxxxxxxxxxxxxxxxx'; // 你的api_secret_key
+$api_secret_key = 'xxxxxxxxxxxxxxxxxx'; // 你的api_key
 $headers = array(
     "Content-Type: application/json",
-    "Authorization: Bearer ".$api_secret_key
+    "Authorization: Bearer ".$api_key
 );
 // 设置请求参数
 $params = array();
@@ -142,7 +142,7 @@ $params['user'] = '张三';
     $params['messages'] = $messages;
 }
 // 调用请求
-$cburl = 'https://api.ztoken.pro/v1/chat/completions';
+$cburl = 'https://api.zhizengzeng.com/v1/chat/completions';
 $chatgpt_resp = Tool::_request('post', $cburl, $params, $headers);
 $data = json_decode($chatgpt_resp, true);
 ```
@@ -151,8 +151,8 @@ python使用官方库示例代码：
 import os
 import openai
 
-openai.api_key = "您的api_secret_key"
-openai.base_url = "https://api.ztoken.pro/v1"  # 要注意openai的版本号，目前最新的是base_url，旧版可能是api_base
+openai.api_key = "您的api_key"
+openai.base_url = "https://api.zhizengzeng.com/v1"  # 要注意openai的版本号，目前最新的是base_url，旧版可能是api_base
 
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
@@ -168,7 +168,7 @@ import time
 import json
 
 def chat_completions():
-    url="https://api.ztoken.pro/v1/chat/completions"
+    url="https://api.zhizengzeng.com/v1/chat/completions"
     api_secret_key = 'xxxxxxxxx';  # 你的api_secret_key
     headers = {'Content-Type': 'application/json', 'Accept':'application/json',
                'Authorization': "Bearer "+api_secret_key}
