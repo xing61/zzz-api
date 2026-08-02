@@ -2,8 +2,8 @@
 
 - **upload batch data**
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1"; 
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1"; 
 
 # files
 def files():
@@ -17,8 +17,8 @@ def files():
 ```
 - **create batch**
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1"; 
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1"; 
 
 def batches(file_id):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
@@ -31,8 +31,8 @@ def batches(file_id):
 - **check batch finished or not**     
 
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1"; 
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1"; 
 
 def retrieve(bid):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
@@ -45,8 +45,8 @@ def retrieve(bid):
 
 
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1"; 
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1"; 
 
 def get_result(fid):
     client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
