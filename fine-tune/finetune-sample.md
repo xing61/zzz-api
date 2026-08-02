@@ -2,8 +2,8 @@
 
 - **data**
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1";
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1";
 
 # files
 def files():
@@ -17,8 +17,8 @@ def files():
 ```
 - **upload train data**
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1";
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1";
 
 # jobs
 def jobs(file_id):
@@ -31,8 +31,8 @@ def jobs(file_id):
 
 
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1";
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1";
 
 # retrieve
 def retrieve(ftid):
@@ -46,8 +46,8 @@ def retrieve(ftid):
 
 
 ```
-API_SECRET_KEY = "ztoken-api-key";
-BASE_URL = "https://api.ztoken.pro/v1";
+API_SECRET_KEY = "api-key";
+BASE_URL = "https://api.zhizengzeng.com/v1";
 
 # chat
 def chat_completions(query):
