@@ -1,8 +1,7 @@
-# 稳定省钱的OpenAI、Claude、Gemini等的API接口-For企业和开发者
+# 企业级稳定的OpenAI、Claude、Gemini等的API接口-For企业和开发者    
 
 #### 介绍
-Ztoken Pro - Same Model. Lower Cost.   <br>
-稳定省钱的大模型API接口服务平台。ZToken聚合全球AI模型，官方合规渠道，拒绝掺水，在保障绝对纯正的前提下，帮您降本 20%-50% <br>
+智增增API - 为企业和开发者提供优质稳定的各类大模型的API接口。支持OpenAI, Anthropic等多种接口格式访问大模型    <br>
 支持OpenAI, Anthropic、Gemini等多种接口格式访问大模型            <br>
 支持OpenAI的API接口，包括：video, batch，assistant, Fine-tuning，o1-preview，o1-mini，gpt-4o，gpt-4, gpt5, sora-2等。 <br>
 （同时支持google gemini、claude、xai, meta, 百度文心一言、阿里、讯飞星火、智谱ChatGLM、ChatGPT等）<br>
@@ -31,9 +30,9 @@ Ztoken Pro - Same Model. Lower Cost.   <br>
   * 更多特性支持，敬请期待。也可直接向我们提交需求哦  
 
 - **项目地址**   
-1、项目官方网址：https://platform.ztoken.pro/#/login   
-   Ztoken Pro - Same Model. Lower Cost.       
-   开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。        
+1、项目官方网址：https://gpt.zhizengzeng.com/#/login    
+   智增增-大模型的API接口服务商，支持百度文心一言、阿里、讯飞星火、清华ChatGLM、ChatGPT等          
+   开发者单独的Secret Key、调用记录、微调模型、余额查询、示例代码等可以从管理后台中获取。         
 2、微信交流群（如果你也对本项目感兴趣，欢迎加入微信群交流）：    
 ![微信截图_20240110204135](https://github.com/xing61/xiaoyi-robot/assets/38256442/bff4db4d-9cf4-42d6-8422-a1177d2d0219)
 
@@ -41,8 +40,8 @@ Ztoken Pro - Same Model. Lower Cost.   <br>
 
  
 - **注意事项**   
-1、以下所有接口的base_url: `https://api.ztoken.pro` （支持https）<br>
-2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的API_KEY，用于认证。 开发者单独的API_KEY，请从ztoken管理后台获得。 
+1、以下所有接口的base_url: `https://api.zhizengzeng.com/` （支持https）<br>   
+2、API通过HTTP请求调用。每次请求，需要在HTTP头中携带用户的API_KEY，用于认证。 开发者单独的API_KEY，请从智增增管理后台获得。 
    请求头形如：  
    ```
    Content-Type: application/json
@@ -50,15 +49,18 @@ Ztoken Pro - Same Model. Lower Cost.   <br>
    ```      
 
 - **典型用法1**    
-1、在python中，使用官方的openai的包，设置api_key为：ztoken后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、设置base_url为：`https://api.ztoken.pro/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+1、在python中，使用官方的openai的包，设置api_key为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
+2、设置base_url为：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+![微信截图_20231109105329](https://github.com/xing61/xiaoyi-robot/assets/38256442/bfb8cbb5-c600-49eb-92eb-96c014ec3e37)   
 
 - **典型用法2**    
-1、在langchain中，设置OPENAI_API_KEY环境变量为：ztoken后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、设置OPENAI_API_BASE_URL环境变量为：`https://api.ztoken.pro/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+1、在langchain中，设置OPENAI_API_KEY环境变量为：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
+2、设置OPENAI_API_BASE_URL环境变量为：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+![微信截图_20231119113128](https://github.com/xing61/xiaoyi-robot/assets/38256442/ce744bb8-a49d-4230-a07d-38235441b96a) 
 
 - **典型用法3**    
-1、在任何语言中，直接发送http请求，请求头中指定key：ztoken后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
-2、请求的url同官方格式，只需要将base_url：`https://api.ztoken.pro/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+1、在任何语言中，直接发送http请求，请求头中指定key：智增增后台获取的API_KEY，替换官方的API_KEY: sk-****** <br>
+2、请求的url同官方格式，只需要将base_url：`https://api.zhizengzeng.com/v1/`,  替换官方的域名:  `https://api.openai.com/v1/` <br>
+![微信截图_20231121104939](https://github.com/xing61/xiaoyi-robot/assets/38256442/b57cc6bc-8f76-44bb-965e-3cc99be9f3fa)  
 
 
